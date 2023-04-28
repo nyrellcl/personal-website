@@ -1,0 +1,14 @@
+@use "sass:math";
+@import "../Global-sass/colors", "../Global-sass/function";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    min-width: rem(375);
+}
