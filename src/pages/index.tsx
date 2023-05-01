@@ -22,7 +22,6 @@ export default function Home() {
 
     if (typedRef.current) {
       const typed = new Typed(typedRef.current, typedOptions);
-
       return () => {
         typed.destroy();
       };
