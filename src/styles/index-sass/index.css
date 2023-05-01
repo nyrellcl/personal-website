@@ -44,6 +44,9 @@ body {
   justify-content: center;
   gap: 2rem;
 }
+.intro-section__content h1, .intro-section__content p {
+  color: hsl(0deg, 0%, 20%);
+}
 .intro-section__content .nav-social {
   width: 50%;
 }
@@ -89,5 +92,21 @@ body {
   }
   .intro-section__content .nav-social__list {
     gap: 2rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .intro-section__content h1 {
+    font-size: 5.25rem;
+  }
+  .intro-section__content p {
+    font-size: 2.375rem;
+  }
+}
+@media only screen and (min-width: 968px) {
+  .intro-section__content h1 {
+    font-size: 6.25rem;
+  }
+  .intro-section__content p {
+    font-size: 3rem;
   }
 }/*# sourceMappingURL=index.css.map */

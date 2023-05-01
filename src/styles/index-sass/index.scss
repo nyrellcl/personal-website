@@ -1,6 +1,6 @@
 @use "sass:math";
 @import "../Global-sass/colors", "../Global-sass/function";
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 html,
@@ -18,76 +18,105 @@ body,
   width: 100%;
 }
 
-
 body {
   min-width: rem(375);
 }
 
-.nav-list{
-    display: flex;
-    margin-left: auto;
-    width: 50%;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 1rem;
+.nav-list {
+  display: flex;
+  margin-left: auto;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
 }
 
 .intro-section {
-    &__content {
-      width: 90%;
-      margin: 0 auto;
+  &__content {
+    h1, p{
+        color: $neutral-2;
+    }
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    .nav-social{
-        width: 50%;
-        &__list{
-            display: flex;
-      align-items: center;
-      margin: 0 auto;
-      list-style: none;
-        }
+    .nav-social {
+      width: 50%;
+      &__list {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        list-style: none;
+      }
     }
-    .page-btn{
-        width: 4rem;
-        height: 4rem;
-        border-radius: 100%;
-        border: none;
-        background-color: $secondary-2;
-        color: hsl(0, 0%, 100%);
-        font-size: rem(32);
-        transition: all 250ms linear;
-        cursor: pointer;
-        &:hover, &:focus{
-            background-color: transparent;
-            transform: scale(1.5);
-        }
-        &:active{
-            transform: translateY(5px);
-        }
+    .page-btn {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 100%;
+      border: none;
+      background-color: $secondary-2;
+      color: hsl(0, 0%, 100%);
+      font-size: rem(32);
+      transition: all 250ms linear;
+      cursor: pointer;
+      &:hover,
+      &:focus {
+        background-color: transparent;
+        transform: scale(1.5);
+      }
+      &:active {
+        transform: translateY(5px);
+      }
     }
   }
 }
 
-@media only screen and (min-width: 375px){
+@media only screen and (min-width: 375px) {
+  .intro-section {
+    &__content {
+      height: 100%;
+      text-align: left;
+      align-items: start;
+      h1 {
+        font-size: rem(74);
+      }
+      p {
+        font-size: rem(28);
+      }
+      .nav-social {
+        width: 100%;
+        &__list {
+          gap: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px){
     .intro-section{
         &__content{
-            height: 100%;
-            text-align: left;
-            align-items: start;
             h1{
-                font-size: rem(74);
+                font-size: rem(84);
             }
             p{
-                font-size: rem(28);
+                font-size: rem(38);
             }
-            .nav-social{
-                width: 100%;
-                &__list{
-                    gap: 2rem;
-                }
+        }
+    }
+}
+
+@media only screen and (min-width: 968px){
+    .intro-section{
+        &__content{
+            h1{
+                font-size: rem(100);
+            }
+            p{
+                font-size: rem(48);
             }
         }
     }

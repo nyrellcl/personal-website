@@ -25,7 +25,6 @@ export default function Home() {
               style={{ backgroundColor: "hsl(28, 62%, 76%)", height: "100%" }}
             ></ParallaxLayer>
             <ParallaxLayer offset={0} speed={1.5}>
-              <Nav />
               <Hero
                 button={
                   <button
