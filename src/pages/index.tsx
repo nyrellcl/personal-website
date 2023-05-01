@@ -5,12 +5,11 @@ import { useRef, useEffect } from "react";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import { animated, useSpring } from "@react-spring/web";
 import Nav from "@/components/Nav";
+import Hero from "@/components/Hero";
 
 export default function Home() {
-
-  const typedRef = useRef<HTMLParagraphElement>(null!);
-  const parallaxRef = useRef<IParallax>(null)
-
+  const typedRef = useRef<HTMLParagraphElement>(null);
+  const parallaxRef = useRef<IParallax>(null);
 
   useEffect(() => {
     const typedOptions = {
@@ -20,7 +19,7 @@ export default function Home() {
       backSpeed: 70,
       showCursor: false,
     };
-    
+
     if (typedRef.current) {
       const typed = new Typed(typedRef.current, typedOptions);
       return () => {
@@ -47,30 +46,8 @@ export default function Home() {
             ></ParallaxLayer>
             <ParallaxLayer offset={0} speed={1.5}>
               <Nav />
-              <article className="intro-section__content">
-                <h1>Nyrell Leonor</h1>
-                <animated.p ref={typedRef}></animated.p>
-                <nav className="nav-social">
-                  <ul className="nav-social__list">
-                    <Link
-                      href="https://www.linkedin.com/in/nyrell-leonor-39180a1a4/"
-                      target="_blank"
-                    >
-                      <li>LinkedIn</li>
-                    </Link>
-                    <Link href="./assets/Nyrell Leonor Resume-CV.pdf" download={true}>
-                      <li>Resume</li>
-                    </Link>
-                    <Link href="https://github.com/nyrellcl" target="_blank">
-                      <li>Github</li>
-                    </Link>
-                    <Link href="mailto:nyrell.leonor2000@gmail.com">
-                      <li>Mail</li>
-                    </Link>
-                  </ul>
-                </nav>
-                <button type="button" className="page-btn" onClick={() => parallaxRef.current?.scrollTo(1)}>Click me</button>
-              </article>
+              <Hero button={<button type="button" className="page-btn" onClick={() => parallaxRef.current?.scrollTo(1)}>Click me</button>}/>
+              
             </ParallaxLayer>
 
             <ParallaxLayer
