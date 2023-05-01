@@ -48,6 +48,14 @@ body {
       list-style: none;
         }
     }
+    .page-btn{
+        width: rem(80);
+        height: rem(40);
+        border-radius: rem(8);
+        border: none;
+        background-color: $secondary-2;
+        color: #262727;
+    }
   }
 }
 

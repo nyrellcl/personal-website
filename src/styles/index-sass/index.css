@@ -1,3 +1,10 @@
+/*$bg: #F8E9DD;
+$red: #EC755D;
+$cyan: #76B5BC;
+$card-bg: #FFFBF6;
+$dark-brown: #382314;
+$heading: #242D52;
+$footer-bg: #1D1E25;*/
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 * {
   margin: 0;
@@ -43,6 +50,14 @@ body {
   justify-content: space-between;
   margin: 0 auto;
   list-style: none;
+}
+.intro-section__content .page-btn {
+  width: 5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: hsl(34deg, 100%, 75%);
+  color: #262727;
 }
 
 @media only screen and (min-width: 375px) {

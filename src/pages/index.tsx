@@ -7,9 +7,10 @@ import { animated, useSpring } from "@react-spring/web";
 import Nav from "@/components/Nav";
 
 export default function Home() {
-  //const el = useRef<HTMLSpanElement>(null!);
 
-  const typedRef = useRef<HTMLParagraphElement>(null);
+  const typedRef = useRef<HTMLParagraphElement>(null!);
+  const parallaxRef = useRef<IParallax>(null)
+
 
   useEffect(() => {
     const typedOptions = {
@@ -19,7 +20,7 @@ export default function Home() {
       backSpeed: 70,
       showCursor: false,
     };
-
+    
     if (typedRef.current) {
       const typed = new Typed(typedRef.current, typedOptions);
       return () => {
@@ -38,11 +39,11 @@ export default function Home() {
       </Head>
       <main className="main">
         <section className="intro-section">
-          <Parallax pages={2}>
+          <Parallax ref={parallaxRef} pages={2}>
             <ParallaxLayer
               offset={0}
               speed={1}
-              style={{ backgroundColor: "red", height: "100%" }}
+              style={{ backgroundColor: "hsl(28, 62%, 76%)", height: "100%" }}
             ></ParallaxLayer>
             <ParallaxLayer offset={0} speed={1.5}>
               <Nav />
@@ -57,7 +58,7 @@ export default function Home() {
                     >
                       <li>LinkedIn</li>
                     </Link>
-                    <Link href="../assets/Nyrell Leonor Resume-CV.pdf" download>
+                    <Link href="./assets/Nyrell Leonor Resume-CV.pdf" download={true}>
                       <li>Resume</li>
                     </Link>
                     <Link href="https://github.com/nyrellcl" target="_blank">
@@ -68,6 +69,7 @@ export default function Home() {
                     </Link>
                   </ul>
                 </nav>
+                <button type="button" className="page-btn" onClick={() => parallaxRef.current?.scrollTo(1)}>Click me</button>
               </article>
             </ParallaxLayer>
 

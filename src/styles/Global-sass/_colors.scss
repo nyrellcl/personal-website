@@ -1,7 +1,20 @@
-$bg: #F8E9DD;
+/*$bg: #F8E9DD;
 $red: #EC755D;
 $cyan: #76B5BC;
 $card-bg: #FFFBF6;
 $dark-brown: #382314;
 $heading: #242D52;
-$footer-bg: #1D1E25;
+$footer-bg: #1D1E25;*/
+
+// apricot beige scheme
+
+
+$primary:  hsl(32, 100%, 85%);
+//headings
+$secondary: hsl(29, 75%, 60%);
+//CTA
+$secondary-2: hsl(34, 100%, 75%);
+//text or bg
+$neutral: hsl(0, 0%, 96%);
+// other design elements eg. borders
+$neutral-2: hsl(0, 0, 20%)
