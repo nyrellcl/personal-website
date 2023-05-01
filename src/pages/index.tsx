@@ -1,32 +1,12 @@
 import Head from "next/head";
-import Typed from "typed.js";
-import Link from "next/link";
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
-import { animated, useSpring } from "@react-spring/web";
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
+import {CgArrowLongDownC} from "react-icons/cg"
 
 export default function Home() {
-  const typedRef = useRef<HTMLParagraphElement>(null);
   const parallaxRef = useRef<IParallax>(null);
-
-  useEffect(() => {
-    const typedOptions = {
-      strings: ["Front End Developer", "Creative", "Designer"],
-      typeSpeed: 70,
-      loop: true,
-      backSpeed: 70,
-      showCursor: false,
-    };
-
-    if (typedRef.current) {
-      const typed = new Typed(typedRef.current, typedOptions);
-      return () => {
-        typed.destroy();
-      };
-    }
-  }, []);
 
   return (
     <>
@@ -46,8 +26,17 @@ export default function Home() {
             ></ParallaxLayer>
             <ParallaxLayer offset={0} speed={1.5}>
               <Nav />
-              <Hero button={<button type="button" className="page-btn" onClick={() => parallaxRef.current?.scrollTo(1)}>Click me</button>}/>
-              
+              <Hero
+                button={
+                  <button
+                    type="button"
+                    className="page-btn"
+                    onClick={() => parallaxRef.current?.scrollTo(1)}
+                  >
+                    <CgArrowLongDownC/>
+                  </button>
+                }
+              />
             </ParallaxLayer>
 
             <ParallaxLayer

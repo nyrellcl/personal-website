@@ -33,28 +33,40 @@ body {
 }
 
 .intro-section {
-  &__content {
+    &__content {
+      width: 90%;
+      margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
     .nav-social{
         width: 50%;
         &__list{
             display: flex;
       align-items: center;
-      justify-content: space-between;
       margin: 0 auto;
       list-style: none;
         }
     }
     .page-btn{
-        width: rem(80);
-        height: rem(40);
-        border-radius: rem(8);
+        width: 4rem;
+        height: 4rem;
+        border-radius: 100%;
         border: none;
         background-color: $secondary-2;
-        color: #262727;
+        color: hsl(0, 0%, 100%);
+        font-size: rem(32);
+        transition: all 250ms linear;
+        cursor: pointer;
+        &:hover, &:focus{
+            background-color: transparent;
+            transform: scale(1.5);
+        }
+        &:active{
+            transform: translateY(5px);
+        }
     }
   }
 }
@@ -63,9 +75,19 @@ body {
     .intro-section{
         &__content{
             height: 100%;
+            text-align: left;
+            align-items: start;
             h1{
                 font-size: rem(74);
-                text-align: center;
+            }
+            p{
+                font-size: rem(28);
+            }
+            .nav-social{
+                width: 100%;
+                &__list{
+                    gap: 2rem;
+                }
             }
         }
     }

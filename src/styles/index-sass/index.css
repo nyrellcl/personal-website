@@ -36,10 +36,13 @@ body {
 }
 
 .intro-section__content {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 2rem;
 }
 .intro-section__content .nav-social {
   width: 50%;
@@ -47,25 +50,44 @@ body {
 .intro-section__content .nav-social__list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin: 0 auto;
   list-style: none;
 }
 .intro-section__content .page-btn {
-  width: 5rem;
-  height: 2.5rem;
-  border-radius: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
   border: none;
   background-color: hsl(34deg, 100%, 75%);
-  color: #262727;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  transition: all 250ms linear;
+  cursor: pointer;
+}
+.intro-section__content .page-btn:hover, .intro-section__content .page-btn:focus {
+  background-color: transparent;
+  transform: scale(1.5);
+}
+.intro-section__content .page-btn:active {
+  transform: translateY(5px);
 }
 
 @media only screen and (min-width: 375px) {
   .intro-section__content {
     height: 100%;
+    text-align: left;
+    align-items: start;
   }
   .intro-section__content h1 {
     font-size: 4.625rem;
-    text-align: center;
+  }
+  .intro-section__content p {
+    font-size: 1.75rem;
+  }
+  .intro-section__content .nav-social {
+    width: 100%;
+  }
+  .intro-section__content .nav-social__list {
+    gap: 2rem;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -1,15 +1,18 @@
 import React from 'react'
-import Head from "next/head";
 import Typed from "typed.js";
 import Link from "next/link";
 import { useRef, useEffect } from "react";
-import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
-import { animated, useSpring } from "@react-spring/web";
+import { animated} from "@react-spring/web";
+
+import linkedIn from "../assets/linkedin.svg"
+import resume from "../assets/resume.svg"
+import github from "../assets/github.svg"
+import mail from "../assets/envelope.svg"
+import Image from 'next/image';
 
 function Hero({button}: any): JSX.Element {
 
   const typedRef = useRef<HTMLParagraphElement>(null);
-  const parallaxRef = useRef<IParallax>(null)
 
 
   useEffect(() => {
@@ -39,16 +42,16 @@ function Hero({button}: any): JSX.Element {
           href="https://www.linkedin.com/in/nyrell-leonor-39180a1a4/"
           target="_blank"
         >
-          <li>LinkedIn</li>
+          <Image src={linkedIn} alt="linked-in-icon"/>
         </Link>
-        <Link href="./assets/Nyrell Leonor Resume-CV.pdf" download={true}>
-          <li>Resume</li>
+        <Link href="./src/assets/Nyrell Leonor Resume-CV.pdf" download={true}>
+          <Image src={resume} alt="resume-icon"/>
         </Link>
         <Link href="https://github.com/nyrellcl" target="_blank">
-          <li>Github</li>
+          <Image src={github} alt="github-icon"/>
         </Link>
         <Link href="mailto:nyrell.leonor2000@gmail.com">
-          <li>Mail</li>
+          <Image src={mail} alt="envelope-icon"/>
         </Link>
       </ul>
     </nav>
