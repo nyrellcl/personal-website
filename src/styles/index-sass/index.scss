@@ -1,14 +1,62 @@
 @use "sass:math";
 @import "../Global-sass/colors", "../Global-sass/function";
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
-body{
-    min-width: rem(375);
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+
+body {
+  min-width: rem(375);
+}
+
+.nav-list{
+    display: flex;
+    margin-left: auto;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.intro-section {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .nav-social{
+        width: 50%;
+        &__list{
+            display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 auto;
+      list-style: none;
+        }
+    }
+  }
+}
+
+@media only screen and (min-width: 375px){
+    .intro-section{
+        &__content{
+            height: 50vh;
+            h1{
+                font-size: rem(74);
+                text-align: center;
+            }
+        }
+    }
 }
