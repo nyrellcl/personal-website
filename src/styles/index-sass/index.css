@@ -77,7 +77,6 @@ body {
 }
 .intro-section .ghost-blurb span {
   position: absolute;
-  transform: translate(-200%, -5%);
   font-weight: 700;
   color: hsl(0deg, 0%, 20%);
   font-size: 2rem;
@@ -99,6 +98,10 @@ body {
 }
 
 @media only screen and (min-width: 375px) {
+  .intro-section .ghost-blurb span {
+    right: 30%;
+    top: 0;
+  }
   .intro-section__content {
     height: 100%;
     text-align: left;
@@ -118,6 +121,9 @@ body {
   }
 }
 @media only screen and (min-width: 768px) {
+  .intro-section .ghost-blurb span {
+    transform: translate(-200%, -5%);
+  }
   .intro-section__content h1 {
     font-size: 5.25rem;
   }
