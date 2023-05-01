@@ -3,24 +3,31 @@ import Typed from "typed.js";
 import Link from "next/link";
 import { useRef, useEffect } from "react";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
+import { animated, useSpring } from "@react-spring/web";
 import Nav from "@/components/Nav";
 
 export default function Home() {
-  const el = useRef<HTMLSpanElement>(null!);
+  //const el = useRef<HTMLSpanElement>(null!);
 
-  /*useEffect(() => {
-    const typed = new Typed(el.current, {
+  const typedRef = useRef<HTMLParagraphElement>(null);
+
+  useEffect(() => {
+    const typedOptions = {
       strings: ["Front End Developer", "Creative", "Designer"],
       typeSpeed: 70,
       loop: true,
       backSpeed: 70,
       showCursor: false,
-    });
-
-    return () => {
-      typed.destroy();
     };
-  }, []);*/
+
+    if (typedRef.current) {
+      const typed = new Typed(typedRef.current, typedOptions);
+
+      return () => {
+        typed.destroy();
+      };
+    }
+  }, []);
 
   return (
     <>
@@ -42,6 +49,7 @@ export default function Home() {
               <Nav />
               <article className="intro-section__content">
                 <h1>Nyrell Leonor</h1>
+                <animated.p ref={typedRef}></animated.p>
                 <nav className="nav-social">
                   <ul className="nav-social__list">
                     <Link
@@ -68,8 +76,8 @@ export default function Home() {
               offset={1}
               speed={1}
               style={{ backgroundColor: "blue" }}
-            >
-              <Nav />
+            ></ParallaxLayer>
+            <ParallaxLayer offset={1.1} speed={1.3}>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
               maxime quae aut fugit saepe! Similique unde rerum, consectetur,
               distinctio numquam, reiciendis omnis perspiciatis harum quod

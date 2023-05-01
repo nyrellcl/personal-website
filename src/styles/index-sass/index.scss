@@ -1,5 +1,6 @@
 @use "sass:math";
 @import "../Global-sass/colors", "../Global-sass/function";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 
 * {
   margin: 0;
@@ -7,6 +8,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 html,
