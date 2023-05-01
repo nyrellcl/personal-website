@@ -33,8 +33,9 @@ body {
 
 .intro-section {
   &__content {
-    h1, p{
-        color: $neutral-2;
+    h1,
+    p {
+      color: $neutral-2;
     }
     width: 90%;
     margin: 0 auto;
@@ -72,6 +73,31 @@ body {
       }
     }
   }
+  .ghost-blurb {
+    span {
+      position: absolute;
+      transform: translate(-200%, -5%);;
+      //margin-left: 35%;
+      font-weight: 700;
+      color: $neutral-2;
+      font-size: rem(32);
+      background: $neutral;
+      padding: 1rem;
+      border-radius: 1rem;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 90%;
+        top: rem(51);
+        transform: rotate(30deg);
+        width: 0;
+        height: 0;
+        border-top: rem(13) solid transparent;
+        border-left: rem(26) solid $neutral;
+        border-bottom: rem(13) solid transparent;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 375px) {
@@ -96,28 +122,28 @@ body {
   }
 }
 
-@media only screen and (min-width: 768px){
-    .intro-section{
-        &__content{
-            h1{
-                font-size: rem(84);
-            }
-            p{
-                font-size: rem(38);
-            }
-        }
+@media only screen and (min-width: 768px) {
+  .intro-section {
+    &__content {
+      h1 {
+        font-size: rem(84);
+      }
+      p {
+        font-size: rem(38);
+      }
     }
+  }
 }
 
-@media only screen and (min-width: 968px){
-    .intro-section{
-        &__content{
-            h1{
-                font-size: rem(100);
-            }
-            p{
-                font-size: rem(48);
-            }
-        }
+@media only screen and (min-width: 968px) {
+  .intro-section {
+    &__content {
+      h1 {
+        font-size: rem(100);
+      }
+      p {
+        font-size: rem(48);
+      }
     }
+  }
 }

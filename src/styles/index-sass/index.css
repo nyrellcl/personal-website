@@ -44,7 +44,8 @@ body {
   justify-content: center;
   gap: 2rem;
 }
-.intro-section__content h1, .intro-section__content p {
+.intro-section__content h1,
+.intro-section__content p {
   color: hsl(0deg, 0%, 20%);
 }
 .intro-section__content .nav-social {
@@ -73,6 +74,28 @@ body {
 }
 .intro-section__content .page-btn:active {
   transform: translateY(5px);
+}
+.intro-section .ghost-blurb span {
+  position: absolute;
+  transform: translate(-200%, -5%);
+  font-weight: 700;
+  color: hsl(0deg, 0%, 20%);
+  font-size: 2rem;
+  background: hsl(0deg, 0%, 96%);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.intro-section .ghost-blurb span::before {
+  content: "";
+  position: absolute;
+  left: 90%;
+  top: 3.1875rem;
+  transform: rotate(30deg);
+  width: 0;
+  height: 0;
+  border-top: 0.8125rem solid transparent;
+  border-left: 1.625rem solid hsl(0deg, 0%, 96%);
+  border-bottom: 0.8125rem solid transparent;
 }
 
 @media only screen and (min-width: 375px) {

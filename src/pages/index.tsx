@@ -3,7 +3,8 @@ import { useRef } from "react";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
-import {CgArrowLongDownC} from "react-icons/cg"
+import { CgArrowLongDownC } from "react-icons/cg";
+import { TbGhost } from "react-icons/tb";
 
 export default function Home() {
   const parallaxRef = useRef<IParallax>(null);
@@ -24,6 +25,20 @@ export default function Home() {
               speed={1}
               style={{ backgroundColor: "hsl(28, 62%, 76%)", height: "100%" }}
             ></ParallaxLayer>
+            <ParallaxLayer offset={1.4} speed={-0.3}>
+              <article className="ghost-blurb">
+              <TbGhost
+                style={{
+                  display: "inline-block",
+                  width: "8em",
+                  height: "8em",
+                  marginLeft: "70%",
+                  position: 'relative'
+                }}
+                />
+                <span>Enjoy!</span>
+              </article>
+            </ParallaxLayer>
             <ParallaxLayer offset={0} speed={1.5}>
               <Hero
                 button={
@@ -32,7 +47,7 @@ export default function Home() {
                     className="page-btn"
                     onClick={() => parallaxRef.current?.scrollTo(1)}
                   >
-                    <CgArrowLongDownC/>
+                    <CgArrowLongDownC />
                   </button>
                 }
               />
