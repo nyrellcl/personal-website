@@ -121,9 +121,6 @@ body {
   }
 }
 @media only screen and (min-width: 768px) {
-  .intro-section .ghost-blurb span {
-    transform: translate(-200%, -5%);
-  }
   .intro-section__content h1 {
     font-size: 5.25rem;
   }

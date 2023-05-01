@@ -25,7 +25,7 @@ export default function Home() {
               speed={1}
               style={{ backgroundColor: "hsl(28, 62%, 76%)", height: "100%" }}
             ></ParallaxLayer>
-            <ParallaxLayer offset={1.4} speed={-0.3}>
+            <ParallaxLayer offset={1.3} speed={-0.3}>
               <article className="ghost-blurb">
               <TbGhost
                 style={{
