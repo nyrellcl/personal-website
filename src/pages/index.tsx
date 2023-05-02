@@ -1,13 +1,21 @@
 import Head from "next/head";
 import { useRef } from "react";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
-import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import { CgArrowLongDownC } from "react-icons/cg";
 import { TbGhost } from "react-icons/tb";
+import { FaGit, FaHtml5, FaNpm } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import {FaSass} from "react-icons/fa"
+import {SiJavascript} from "react-icons/si"
+import {SiTypescript} from "react-icons/si"
+import {FaReact} from "react-icons/fa"
+import About from "@/components/About";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   const parallaxRef = useRef<IParallax>(null);
+  const alignCenter = { display: 'flex', alignItems: 'center' }
 
   return (
     <>
@@ -19,22 +27,18 @@ export default function Home() {
       </Head>
       <main className="main">
         <section className="intro-section">
-          <Parallax ref={parallaxRef} pages={2}>
-            <ParallaxLayer
-              offset={0}
-              speed={1}
-              style={{ backgroundColor: "hsl(28, 62%, 76%)", height: "100%" }}
-            ></ParallaxLayer>
+          <Parallax ref={parallaxRef} pages={5}>
+            <ParallaxLayer offset={0} speed={1}></ParallaxLayer>
             <ParallaxLayer offset={1.3} speed={-0.3}>
               <article className="ghost-blurb">
-              <TbGhost
-                style={{
-                  display: "inline-block",
-                  width: "8em",
-                  height: "8em",
-                  marginLeft: "70%",
-                  position: 'relative'
-                }}
+                <TbGhost
+                  style={{
+                    display: "inline-block",
+                    width: "8em",
+                    height: "8em",
+                    marginLeft: "70%",
+                    position: "relative",
+                  }}
                 />
                 <span>Enjoy!</span>
               </article>
@@ -54,16 +58,21 @@ export default function Home() {
             </ParallaxLayer>
 
             <ParallaxLayer
-              offset={1}
-              speed={1}
-              style={{ backgroundColor: "blue" }}
-            ></ParallaxLayer>
-            <ParallaxLayer offset={1.1} speed={1.3}>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-              maxime quae aut fugit saepe! Similique unde rerum, consectetur,
-              distinctio numquam, reiciendis omnis perspiciatis harum quod
-              obcaecati aspernatur nisi optio consequatur.
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "flex-start",
+              }}
+              offset={1.3}
+            >
+              <About />
             </ParallaxLayer>
+            <article className="skills-grid">
+              <ParallaxLayer offset={1.7}>
+                <Skills/>
+              </ParallaxLayer>
+        
+            </article>
           </Parallax>
         </section>
       </main>

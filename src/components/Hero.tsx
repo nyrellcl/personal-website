@@ -35,7 +35,7 @@ function Hero({button}: any): JSX.Element {
   return (
     <article className="intro-section__content">
     <h1>Nyrell Leonor</h1>
-    <animated.p ref={typedRef}></animated.p>
+    <animated.p ref={typedRef}> .</animated.p>
     <nav className="nav-social">
       <ul className="nav-social__list">
         <Link
