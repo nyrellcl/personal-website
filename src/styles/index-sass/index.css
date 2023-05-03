@@ -28,6 +28,10 @@ body {
   min-width: 23.4375rem;
 }
 
+p {
+  letter-spacing: 0.0625rem;
+}
+
 .nav-list {
   display: flex;
   margin-left: auto;
@@ -47,15 +51,21 @@ body {
   background-color: hsl(34deg, 100%, 75%);
   padding: 20px;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: left;
 }
-.about-section__card h2, .about-section__card h3, .about-section__card p {
+.about-section__card h2,
+.about-section__card h3,
+.about-section__card p {
   color: hsl(0deg, 0%, 20%);
+}
+.about-section__card h3 {
+  text-align: center;
 }
 .about-section__card .page-btn {
   background-color: hsl(0deg, 0%, 20%);
+  margin: 0 auto;
 }
 .about-section__card .page-btn:hover {
   color: hsl(0deg, 0%, 20%);
@@ -182,9 +192,16 @@ body {
   }
   .about-section__card h3 {
     font-size: 2.375rem;
+    text-align: left;
   }
   .about-section__card p {
     line-height: 1.75rem;
+  }
+  .about-section__card .projects-blurb {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
   }
 }
 .skill-section {
@@ -201,6 +218,18 @@ body {
   .intro-section__content p {
     font-size: 2.375rem;
   }
+  .about-section__card h2 {
+    font-size: 4.625rem;
+  }
+  .about-section__card h3 {
+    text-align: center;
+  }
+  .about-section__card p {
+    font-size: 1.5rem;
+  }
+  .about-section__card .projects-blurb {
+    font-size: 1.875rem;
+  }
 }
 @media only screen and (min-width: 968px) {
   .intro-section__content h1 {
@@ -208,5 +237,27 @@ body {
   }
   .intro-section__content p {
     font-size: 3rem;
+  }
+  .about-section__card {
+    position: relative;
+  }
+  .about-section__card h3 {
+    font-size: 3rem;
+  }
+  .about-section__card h3, .about-section__card .projects-blurb {
+    text-align: left;
+  }
+  .about-section__card p {
+    width: 70%;
+  }
+  .about-section__card .page-btn {
+    margin: 0;
+  }
+  .about-section__card .skill-section__card {
+    top: 50%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    left: 50%;
   }
 }/*# sourceMappingURL=index.css.map */

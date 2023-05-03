@@ -16,6 +16,7 @@ function About({button}: AboutProps) {
         </p>
         <h3>Learning and creating with...</h3>
         <Skills/>
+        <p className="projects-blurb">Continue below to see my projects!</p>
       {button}
       </article>
     </section>
