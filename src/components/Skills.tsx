@@ -19,10 +19,10 @@ function Skills() {
   const { size, ...rest } = useSpring({
     ref: springApi,
     config: config.stiff,
-    from: { size: "20%", background: "hotpink" },
+    from: { size: "50%", background: "hotpink" },
     to: {
       size: open ? "100%" : "50%",
-      background: open ? "white" : "hotpink",
+      background: open ? "transparent" : "hotpink",
     },
   });
 
@@ -44,17 +44,18 @@ function Skills() {
   return (
     <section className="skill-section">
       <article className="skill-section__card">
-      <animated.div
+      <animated.button type="button"
         style={{ ...rest, width: size, height: size }}
         className="container"
-        onClick={() => setOpen(open => !open)}>
+        onClick={() => setOpen(!open)}>
         {transition((style, item) => (
-          <animated.div
+          <animated.span
             className="item"
-            style={{ ...style, background: item.css }}
-          />
+            style={{ ...style, background: item.svg }}>
+                {item.name}
+            </animated.span>
         ))}
-      </animated.div>
+      </animated.button>
       </article>
     </section>
   );

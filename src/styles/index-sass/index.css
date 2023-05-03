@@ -38,6 +38,7 @@ body {
 }
 
 .about-section {
+  width: 100%;
   height: 100%;
 }
 .about-section__card {
@@ -52,9 +53,11 @@ body {
 }
 
 .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 80px;
   height: 50px;
-  background: white;
   border-radius: 0.5rem;
   will-change: transform, opacity;
 }
@@ -62,13 +65,13 @@ body {
 .container {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(4, minmax(100px, 1fr));
-  grid-gap: 25px;
-  padding: 25px;
-  background: white;
-  border-radius: 5px;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5625rem;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 0.5rem;
   cursor: pointer;
-  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.05);
   will-change: width, height;
   margin: 0 auto;
 }
@@ -160,10 +163,27 @@ body {
   .intro-section__content .nav-social__list {
     gap: 2rem;
   }
+  .about-section__card {
+    gap: 2rem;
+  }
   .about-section__card h2 {
     font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+  .about-section__card h3 {
+    font-size: 2.375rem;
+  }
+  .about-section__card p {
+    line-height: 1.75rem;
   }
 }
+.skill-section {
+  width: 100%;
+}
+.skill-section__card {
+  width: 100%;
+}
+
 @media only screen and (min-width: 768px) {
   .intro-section__content h1 {
     font-size: 5.25rem;

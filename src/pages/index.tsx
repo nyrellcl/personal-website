@@ -61,18 +61,19 @@ export default function Home() {
               style={{
                 display: "flex",
                 alignItems: "center",
-                justifyContent: "flex-start",
+                justifyContent: "center",
               }}
-              offset={1.3}
+              offset={1}
+              speed={1}
             >
               <About />
             </ParallaxLayer>
-            <article className="skills-grid">
+            {/* <article className="skills-grid">
               <ParallaxLayer offset={1.7}>
                 <Skills/>
               </ParallaxLayer>
         
-            </article>
+            </article> */}
           </Parallax>
         </section>
       </main>
