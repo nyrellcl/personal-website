@@ -17,10 +17,10 @@ function Skills() {
   const { size, ...rest } = useSpring({
     ref: springApi,
     config: config.stiff,
-    from: { size: "200px", background: "hotpink" },
+    from: { size: "20%", background: "hsl(192, 60%, 50%)" },
     to: {
-      size: open ? "100%" : "200px",
-      background: open ? "transparent" : "hotpink",
+      size: open ? "100%" : "20%",
+      background: open ? "transparent" : "hsl(192, 60%, 50%)",
     },
   });
 

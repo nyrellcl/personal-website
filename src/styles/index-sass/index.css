@@ -56,12 +56,14 @@ p {
   text-align: left;
 }
 .about-section__card h2,
-.about-section__card h3,
-.about-section__card p {
+.about-section__card h3 {
   color: hsl(0deg, 0%, 20%);
 }
 .about-section__card h3 {
   text-align: center;
+}
+.about-section__card p {
+  color: hsl(0deg, 0%, 50%);
 }
 .about-section__card .page-btn {
   background-color: hsl(0deg, 0%, 20%);
@@ -159,6 +161,10 @@ p {
   border-top: 0.8125rem solid transparent;
   border-left: 1.625rem solid hsl(0deg, 0%, 96%);
   border-bottom: 0.8125rem solid transparent;
+}
+
+.skill-section__card {
+  height: auto;
 }
 
 @media only screen and (min-width: 375px) {
