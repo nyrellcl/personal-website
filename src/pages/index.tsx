@@ -7,22 +7,24 @@ import { TbGhost } from "react-icons/tb";
 import About from "@/components/About";
 
 export default function Home() {
-  const [factorSize, setFactorSize] = useState<number>(1.5) 
+  const [factorSize, setFactorSize] = useState<number>(1.5);
   const parallaxRef = useRef<IParallax>(null);
-
-  useEffect(()=>{
-    function handleFactorResize(){
-      if(window.innerWidth >= 768){
-        setFactorSize(1)
-      } else{
-        setFactorSize(1.5)
-      }
+  function handleFactorResize() {
+    if (window.innerWidth >= 768) {
+      return setFactorSize(1);
+    } else {
+      return factorSize
     }
-    window.addEventListener("resize", handleFactorResize)
-    return () => window.removeEventListener("resize", handleFactorResize);
-  }, [])
+  }
 
-  
+  useEffect(() => {
+    handleFactorResize();
+
+    window.addEventListener("resize", handleFactorResize);
+    return () => window.removeEventListener("resize", handleFactorResize);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <>
       <Head>
