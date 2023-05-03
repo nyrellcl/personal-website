@@ -10,7 +10,11 @@ import github from "../assets/github.svg"
 import mail from "../assets/envelope.svg"
 import Image from 'next/image';
 
-function Hero({button}: any): JSX.Element {
+interface HeroProps {
+  button: React.ReactNode;
+}
+
+function Hero({button}: HeroProps): JSX.Element {
 
   const typedRef = useRef<HTMLParagraphElement>(null);
 

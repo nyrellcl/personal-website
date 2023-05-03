@@ -6,16 +6,16 @@ import { CgArrowLongDownC } from "react-icons/cg";
 import { TbGhost } from "react-icons/tb";
 import { FaGit, FaHtml5, FaNpm } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
-import {FaSass} from "react-icons/fa"
-import {SiJavascript} from "react-icons/si"
-import {SiTypescript} from "react-icons/si"
-import {FaReact} from "react-icons/fa"
+import { FaSass } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
 
 export default function Home() {
   const parallaxRef = useRef<IParallax>(null);
-  const alignCenter = { display: 'flex', alignItems: 'center' }
+  const alignCenter = { display: "flex", alignItems: "center" };
 
   return (
     <>
@@ -66,7 +66,17 @@ export default function Home() {
               offset={1}
               speed={1}
             >
-              <About />
+              <About
+                button={
+                  <button
+                    type="button"
+                    className="page-btn"
+                    onClick={() => parallaxRef.current?.scrollTo(2)}
+                  >
+                    <CgArrowLongDownC />
+                  </button>
+                }
+              />
             </ParallaxLayer>
             {/* <article className="skills-grid">
               <ParallaxLayer offset={1.7}>
