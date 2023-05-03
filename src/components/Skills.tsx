@@ -51,7 +51,7 @@ function Skills() {
           {transition((style, item) => (
             <animated.span
               className="item"
-              style={{ ...style, background: item.svg }}
+              style={{ ...style, background: item.bgColor }}
             >
               {item.name}
             </animated.span>
