@@ -1,22 +1,28 @@
 import Head from "next/head";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import Hero from "@/components/Hero";
 import { CgArrowLongDownC } from "react-icons/cg";
 import { TbGhost } from "react-icons/tb";
-import { FaGit, FaHtml5, FaNpm } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { FaSass } from "react-icons/fa";
-import { SiJavascript } from "react-icons/si";
-import { SiTypescript } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
 import About from "@/components/About";
-import Skills from "@/components/Skills";
 
 export default function Home() {
+  const [factorSize, setFactorSize] = useState<number>(1.5) 
   const parallaxRef = useRef<IParallax>(null);
-  const alignCenter = { display: "flex", alignItems: "center" };
 
+  useEffect(()=>{
+    function handleFactorResize(){
+      if(window.innerWidth >= 768){
+        setFactorSize(1)
+      } else{
+        setFactorSize(1.5)
+      }
+    }
+    window.addEventListener("resize", handleFactorResize)
+    return () => window.removeEventListener("resize", handleFactorResize);
+  }, [])
+
+  
   return (
     <>
       <Head>
@@ -65,6 +71,7 @@ export default function Home() {
               }}
               offset={1}
               speed={1}
+              factor={factorSize}
             >
               <About
                 button={
@@ -78,12 +85,6 @@ export default function Home() {
                 }
               />
             </ParallaxLayer>
-            {/* <article className="skills-grid">
-              <ParallaxLayer offset={1.7}>
-                <Skills/>
-              </ParallaxLayer>
-        
-            </article> */}
           </Parallax>
         </section>
       </main>

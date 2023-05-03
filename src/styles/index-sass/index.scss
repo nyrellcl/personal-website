@@ -71,9 +71,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
-  height: 50px;
-  border-radius: rem(8);
+  width: rem(80);
+  height: rem(80);
+  border-radius: 100%;
   will-change: transform, opacity;
 }
 
@@ -194,7 +194,6 @@ p {
       gap: 2rem;
       h2 {
         font-size: rem(48);
-        padding-bottom: 1rem;
       }
       h3 {
         font-size: rem(38);
@@ -266,6 +265,7 @@ p {
     &__card {
       h3 {
         font-size: rem(48);
+        width: 50%;
       }
       h3, .projects-blurb{
         text-align: left;
