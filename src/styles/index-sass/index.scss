@@ -73,14 +73,14 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: rem(96);
-  height: rem(96);
+  width: rem(100);
+  height: rem(100);
   border-radius: 100%;
   will-change: transform, opacity;
   font-weight: 700;
   color: $neutral-2;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: rem(14);
 }
 
 .container {

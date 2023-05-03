@@ -77,14 +77,14 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 6rem;
-  height: 6rem;
+  width: 6.25rem;
+  height: 6.25rem;
   border-radius: 100%;
   will-change: transform, opacity;
   font-weight: 700;
   color: hsl(0deg, 0%, 20%);
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 
 .container {
