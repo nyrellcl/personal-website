@@ -48,8 +48,8 @@ p {
     h3 {
       text-align: center;
     }
-    p{
-        color: $neutral-3;
+    p {
+      color: $neutral-3;
     }
     .page-btn {
       background-color: $neutral-2;
@@ -73,10 +73,12 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: rem(80);
-  height: rem(80);
+  width: rem(96);
+  height: rem(96);
   border-radius: 100%;
   will-change: transform, opacity;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .container {
@@ -164,10 +166,10 @@ p {
   }
 }
 
-.skill-section{
-    &__card{
-        height: auto;
-    }
+.skill-section {
+  &__card {
+    height: auto;
+  }
 }
 
 @media only screen and (min-width: 375px) {
@@ -275,13 +277,14 @@ p {
         font-size: rem(48);
         width: 50%;
       }
-      h3, .projects-blurb{
+      h3,
+      .projects-blurb {
         text-align: left;
       }
       p {
         width: 70%;
       }
-      .page-btn{
+      .page-btn {
         margin: 0;
       }
       position: relative;

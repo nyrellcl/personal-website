@@ -77,10 +77,12 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 100%;
   will-change: transform, opacity;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .container {
@@ -250,7 +252,8 @@ p {
     font-size: 3rem;
     width: 50%;
   }
-  .about-section__card h3, .about-section__card .projects-blurb {
+  .about-section__card h3,
+.about-section__card .projects-blurb {
     text-align: left;
   }
   .about-section__card p {
