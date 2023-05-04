@@ -309,6 +309,10 @@ p {
       h3 {
         font-size: rem(48);
         width: 50%;
+        text-align: left;
+    position: absolute;
+    top: 24%;
+    left: 65%
       }
       h3,
       .projects-blurb {
@@ -323,7 +327,7 @@ p {
       position: relative;
       .skill-section {
         &__card {
-          top: 25%;
+          top: 40%;
           width: 50%;
           position: absolute;
           right: 0;

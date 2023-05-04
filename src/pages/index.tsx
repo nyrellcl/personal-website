@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import { CgArrowLongDownC } from "react-icons/cg";
 import { TbGhost } from "react-icons/tb";
 import About from "@/components/About";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   const [factorSize, setFactorSize] = useState<number>(1.5);
@@ -86,6 +87,9 @@ export default function Home() {
                   </button>
                 }
               />
+            </ParallaxLayer>
+            <ParallaxLayer offset={2} speed={1}>
+              <Projects/>
             </ParallaxLayer>
           </Parallax>
         </section>

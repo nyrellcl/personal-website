@@ -283,6 +283,10 @@ p {
   .about-section__card h3 {
     font-size: 3rem;
     width: 50%;
+    text-align: left;
+    position: absolute;
+    top: 24%;
+    left: 65%;
   }
   .about-section__card h3,
 .about-section__card .projects-blurb {
@@ -295,7 +299,7 @@ p {
     margin: 0;
   }
   .about-section__card .skill-section__card {
-    top: 25%;
+    top: 40%;
     width: 50%;
     position: absolute;
     right: 0;

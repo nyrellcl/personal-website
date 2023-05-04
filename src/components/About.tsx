@@ -3,21 +3,27 @@ import React, { ReactNode } from "react";
 import Skills from "./Skills";
 
 interface AboutProps {
-    button: React.ReactNode;
-  }
+  button: React.ReactNode;
+}
 
-function About({button}: AboutProps) {
+function About({ button }: AboutProps) {
   return (
     <section className="about-section">
       <article className="about-section__card">
         <h2>About</h2>
-        <p>Focused on strengthening my skills as a front-end developer. I'm constantly refining
-            my knowledge of front-end technologies through creating simple to complex projects.
+        <p>
+          I specialize in crafting visually appealing and engaging user
+          interfaces. Specialize in writing clean, efficient, and maintainable
+          code that brings designs to life.
         </p>
-        <h3>Click below to see my skills!</h3>
-        <Skills/>
-        <p className="projects-blurb">Continue below to see my <span style={{color: "hsl(284, 40%, 40%)"}}>projects!</span></p>
-      {button}
+        <p>
+          With a passion for dynamic animations and intuitive navigation, I am
+          committed to enhancing user experience through continuous learning and
+          building.
+        </p>
+        <h3>Working with...</h3>
+        <Skills />
+        {button}
       </article>
     </section>
   );
