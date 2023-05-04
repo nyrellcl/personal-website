@@ -91,10 +91,15 @@ p {
   grid-gap: rem(25);
   padding: 1rem 0;
   border: none;
-  border-radius: rem(8);
   cursor: pointer;
   will-change: width, height;
   margin: 0 auto;
+}
+
+.skill-btn {
+  border-radius: rem(8);
+  animation: ripple 1.5s linear infinite;
+  transition: all 0.7s ease;
 }
 
 .page-btn {
@@ -102,7 +107,7 @@ p {
   height: 4rem;
   border-radius: 100%;
   border: none;
-  background-color: $secondary-2;
+  background-color: $secondary;
   color: hsl(0, 0%, 100%);
   font-size: rem(32);
   transition: all 250ms linear;
@@ -114,6 +119,7 @@ p {
   &:focus {
     background-color: transparent;
     transform: scale(1.5);
+    color: $secondary;
   }
   &:active {
     transform: translateY(5px);
@@ -133,6 +139,18 @@ p {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    .profession-container {
+      display: flex;
+      gap: 0.32rem;
+      align-items: center;
+      width: 100%;
+      p {
+        &:nth-child(2) {
+          font-weight: 700;
+          color: $accent-2;
+        }
+      }
+    }
     .nav-social {
       width: 50%;
       &__list {
@@ -149,7 +167,7 @@ p {
       font-weight: 700;
       color: $neutral-2;
       font-size: rem(32);
-      background: $neutral;
+      background: #fff;
       padding: 1rem;
       border-radius: 1rem;
       &::before {
@@ -161,7 +179,7 @@ p {
         width: 0;
         height: 0;
         border-top: rem(13) solid transparent;
-        border-left: rem(26) solid $neutral;
+        border-left: rem(26) solid #fff;
         border-bottom: rem(13) solid transparent;
       }
     }
@@ -190,7 +208,7 @@ p {
         font-size: rem(74);
       }
       p {
-        font-size: rem(28);
+        font-size: rem(24);
       }
       .nav-social {
         width: 100%;
@@ -227,7 +245,9 @@ p {
 .skill-section {
   width: 100%;
   &__card {
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -284,7 +304,7 @@ p {
         text-align: left;
       }
       p {
-        width: 70%;
+        width: 50%;
       }
       .page-btn {
         margin: 0;
@@ -292,7 +312,7 @@ p {
       position: relative;
       .skill-section {
         &__card {
-          top: 50%;
+          top: 25%;
           width: 50%;
           position: absolute;
           right: 0;
@@ -300,5 +320,18 @@ p {
         }
       }
     }
+  }
+}
+
+$color: #fff;
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba($color, 0.3), 0 0 0 1px rgba($color, 0.3),
+      0 0 0 3px rgba($color, 0.3), 0 0 0 5px rgba($color, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba($color, 0.3), 0 0 0 4px rgba($color, 0.3),
+      0 0 0 20px rgba($color, 0), 0 0 0 30px rgba($color, 0);
   }
 }

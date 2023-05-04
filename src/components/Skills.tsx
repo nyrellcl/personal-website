@@ -43,19 +43,22 @@ function Skills() {
     <section className="skill-section">
       <article className="skill-section__card">
         <animated.button
+        className={open ? "" : "skill-btn"}
           type="button"
-          style={{ ...rest, width: size, height: size }}
-          className="container"
+          style={{ ...rest, width: size, height: size,  border: "none" }}
           onClick={() => setOpen(!open)}
         >
-          {transition((style, item) => (
-            <animated.span
-              className="item"
-              style={{ ...style, background: item.bgColor }}
-            >
-              {item.name}
-            </animated.span>
-          ))}
+          {" "}
+          <animated.div className="container">
+            {transition((style, item) => (
+              <animated.span
+                className="item"
+                style={{ ...style, background: item.bgColor }}
+              >
+                {item.name}
+              </animated.span>
+            ))}
+          </animated.div>
         </animated.button>
       </article>
     </section>
