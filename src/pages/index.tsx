@@ -72,7 +72,7 @@ export default function Home() {
                 justifyContent: "center",
               }}
               offset={1}
-              speed={1}
+              speed={1.5}
               factor={factorSize}
             >
               <About

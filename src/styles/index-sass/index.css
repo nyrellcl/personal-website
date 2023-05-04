@@ -104,7 +104,18 @@ p {
   border-radius: 0.5rem;
   -webkit-animation: ripple 1.5s linear infinite;
           animation: ripple 1.5s linear infinite;
+  cursor: pointer;
   transition: all 0.7s ease;
+  position: relative;
+  font-weight: 700;
+}
+.skill-btn::before {
+  content: "Click me!";
+  position: absolute;
+  top: 25%;
+  right: 0;
+  left: 0;
+  color: #fff;
 }
 
 .page-btn {
@@ -145,7 +156,7 @@ p {
 }
 .intro-section__content .profession-container {
   display: flex;
-  gap: 0.32rem;
+  gap: 0.4rem;
   align-items: center;
   width: 100%;
 }
