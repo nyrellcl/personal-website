@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import Image, { StaticImageData } from "next/image";
+import { CgArrowLongRightC } from "react-icons/cg";
 import coffee from "../assets/coffee.png";
 import arch from "../assets/arch-studio.png";
 import myTeam from "../assets/myteam.png";
@@ -42,6 +43,7 @@ const ProjectPage = ({ offset, onPageClick, projects, gradient }: ProjectProps) 
     <ParallaxLayer offset={offset} speed={0.5}>
       <section className="projects-section">
         <h2>My Work</h2>
+        <button type="button" className="project-btn" onClick={onPageClick}><CgArrowLongRightC/></button>
         <article className="projects-section__container">
           {projects.map((project) => (
             <article key={project.name} className="projects-section__card">
@@ -136,11 +138,12 @@ function Projects() {
           projects={projects3}
           gradient="tomato"
         />
-        {/* <ProjectPage
+         <ProjectPage
           offset={3}
           onPageClick={() => scrollToProjects(0)}
           projects={projects4}
-        /> */}
+          gradient="teal"
+        /> 
       </Parallax>
     </section>
   );

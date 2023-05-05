@@ -40,6 +40,27 @@ p {
   padding: 1rem;
 }
 
+.project-btn{
+    width: 4rem;
+    height: rem(90);
+    border-radius: 100%;
+    border: none;
+    background-color: transparent;
+    color: hsl(0deg, 0%, 100%);
+    font-size: 3.5rem;
+    transition: all 250ms linear;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover, &:focus{
+        transform: scale(1.5);
+    }
+    &:active{
+        transform: translateX(40px);
+    }
+}
+
 .about-section {
   width: 100%;
   height: 100%;
@@ -334,6 +355,7 @@ p {
     height: 100%;
     justify-content: center;
     gap: 3rem;
+    margin-top: 2rem;
   }
   &__card {
     display: flex;
@@ -343,6 +365,9 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
+    .project-btn{
+        font-size: 6rem;
+    }
   .intro-section {
     &__content {
       h1 {
@@ -368,6 +393,24 @@ p {
       .projects-blurb {
         font-size: rem(30);
       }
+    }
+  }
+  .projects-section{
+    h2{
+        width: 100%;
+        font-size: rem(74);
+       padding: 2rem 0 0 2rem;
+    }
+    &__images{
+        width: 50%;
+    }
+    &__container{
+        margin-top: 0;
+        padding-bottom: 3rem;
+        gap: 1.5rem;
+    }
+    &__card{
+        align-items: center;
     }
   }
 }
