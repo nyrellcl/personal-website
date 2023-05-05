@@ -152,7 +152,7 @@ function Projects({ button }: ButtonProps) {
           offset={0}
           onPageClick={() => scrollToProjects(1)}
           projects={projects1}
-          gradient="pink"
+          gradient="purple"
         />
         <ProjectPage
           offset={1}
@@ -170,7 +170,7 @@ function Projects({ button }: ButtonProps) {
           offset={3}
           onPageClick={() => scrollToProjects(0)}
           projects={projects4}
-          gradient="purple"
+          gradient="pink"
         />
         {button}
       </Parallax>
