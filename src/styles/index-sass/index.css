@@ -344,6 +344,7 @@ p {
   justify-content: center;
   gap: 3rem;
   margin-top: 2rem;
+  padding-bottom: 3rem;
 }
 .projects-section__card {
   display: flex;
