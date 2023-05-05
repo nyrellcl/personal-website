@@ -19,7 +19,10 @@ body,
   overflow: hidden;
   background-color: $primary;
 }
-
+%width-margin {
+  width: 90%;
+  margin: 0 auto;
+}
 body {
   min-width: rem(375);
 }
@@ -52,10 +55,10 @@ p {
       color: $neutral-3;
     }
     .page-btn {
-      background-color: $neutral-2;
+      background-color: $accent-2;
       margin: 0 auto;
       &:hover {
-        color: $neutral-2;
+        color: $accent-2;
       }
     }
     width: 100%;
@@ -103,7 +106,7 @@ p {
   transition: all 0.7s ease;
   position: relative;
   font-weight: 700;
-  &::before{
+  &::before {
     content: "Click me!";
     position: absolute;
     top: 25%;
@@ -203,6 +206,31 @@ p {
   }
 }
 
+.projects-section {
+  width: 100%;
+  height: 100%;
+  background-color: $accent-2;;
+  h2 {
+    @extend %width-margin;
+    padding: 2rem 0;
+    color: $secondary-2;
+  }
+  &__card {
+    @extend %width-margin;
+    h3{
+        color: $secondary;
+    }
+    p{
+        color: #fff;
+    }
+  }
+  &__images {
+    width: 100%;
+    height: 100%;
+    border-radius: rem(8);
+  }
+}
+
 @media only screen and (min-width: 375px) {
   .intro-section {
     .ghost-blurb {
@@ -238,7 +266,7 @@ p {
       }
       h3 {
         font-size: rem(38);
-        text-align: left;
+        text-align: center;
       }
       p {
         line-height: rem(28);
@@ -259,6 +287,27 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-size: rem(48);
+  }
+  &__container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    gap: 3rem;
+  }
+  &__card{
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -309,10 +358,9 @@ p {
       h3 {
         font-size: rem(48);
         width: 50%;
-        text-align: left;
-    position: absolute;
-    top: 24%;
-    left: 65%
+        position: absolute;
+        top: 24%;
+        left: 65%;
       }
       h3,
       .projects-blurb {
@@ -334,6 +382,22 @@ p {
           left: 50%;
         }
       }
+    }
+  }
+
+  .projects-section {
+    &__container {
+      display: flex;
+      align-items: center;
+    }
+    &__card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__images {
+      width: 80%;
     }
   }
 }

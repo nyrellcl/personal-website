@@ -13,7 +13,7 @@ function About({ button }: AboutProps) {
         <h2>About</h2>
         <p>
           I specialize in crafting visually appealing and engaging user
-          interfaces. Specialize in writing clean, efficient, and maintainable
+          interfaces. Advocate of writing clean, efficient, and maintainable
           code that brings designs to life.
         </p>
         <p>
