@@ -1,12 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, { ReactNode } from "react";
+import React from "react";
 import Skills from "./Skills";
 
-interface AboutProps {
+
+interface ButtonProps {
   button: React.ReactNode;
 }
 
-function About({ button }: AboutProps) {
+function About({ button }: ButtonProps) {
   return (
     <section className="about-section">
       <article className="about-section__card">

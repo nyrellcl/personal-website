@@ -10,11 +10,11 @@ import github from "../assets/github.svg";
 import mail from "../assets/envelope.svg";
 import Image from "next/image";
 
-interface HeroProps {
+interface ButtonProps {
   button: React.ReactNode;
 }
 
-function Hero({ button }: HeroProps): JSX.Element {
+function Hero({ button }: ButtonProps): JSX.Element {
   const typedRef = useRef<HTMLParagraphElement>(null);
 
   useEffect(() => {

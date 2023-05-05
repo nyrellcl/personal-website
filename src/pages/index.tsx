@@ -7,9 +7,10 @@ import { TbGhost } from "react-icons/tb";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 
-export default function Home() {
+export default function Home( ) {
   const [factorSize, setFactorSize] = useState<number>(1.5);
   const parallaxRef = useRef<IParallax>(null);
+  
   function handleFactorResize() {
     if (window.innerWidth >= 768) {
       return setFactorSize(1);
@@ -88,8 +89,16 @@ export default function Home() {
                 }
               />
             </ParallaxLayer>
-            <ParallaxLayer offset={2} speed={1} factor={1.05}>
-              <Projects/>
+            <ParallaxLayer offset={2} speed={1.2} factor={1.05}>
+              <Projects button={
+                  <button
+                    type="button"
+                    className="page-btn"
+                    onClick={() => parallaxRef.current?.scrollTo(3)}
+                  >
+                    <CgArrowLongDownC />
+                  </button>
+                }/>
             </ParallaxLayer>
           </Parallax>
         </section>
@@ -97,3 +106,6 @@ export default function Home() {
     </>
   );
 }
+
+
+

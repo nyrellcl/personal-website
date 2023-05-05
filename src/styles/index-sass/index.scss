@@ -277,6 +277,10 @@ p {
     p {
       color: #fff;
     }
+    a{
+      text-align: center;
+    }
+    align-items: center;
   }
   &__images {
     width: 100%;
@@ -369,6 +373,18 @@ p {
   }
 }
 
+@media only screen and (min-width: 540px){
+  .projects-section{
+    &__card{
+      align-items: center;
+    }
+    &__images{
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+
 @media only screen and (min-width: 768px) {
     .project-btn{
         font-size: 6rem;
@@ -416,6 +432,17 @@ p {
     }
     &__card{
         align-items: center;
+        h3{
+          font-size: rem(32);
+        }
+    }
+  }
+}
+
+@media only screen and (min-width: 900px){
+  .projects-section{
+    &__images{
+      width: 100%;
     }
   }
 }

@@ -268,11 +268,17 @@ p {
   padding: 2rem 0;
   color: hsl(34deg, 100%, 75%);
 }
+.projects-section__card {
+  align-items: center;
+}
 .projects-section__card h3 {
   color: hsl(29deg, 75%, 60%);
 }
 .projects-section__card p {
   color: #fff;
+}
+.projects-section__card a {
+  text-align: center;
 }
 .projects-section__images {
   width: 100%;
@@ -356,6 +362,15 @@ p {
   gap: 0.5rem;
 }
 
+@media only screen and (min-width: 540px) {
+  .projects-section__card {
+    align-items: center;
+  }
+  .projects-section__images {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 @media only screen and (min-width: 768px) {
   .project-btn {
     font-size: 6rem;
@@ -393,6 +408,14 @@ p {
   }
   .projects-section__card {
     align-items: center;
+  }
+  .projects-section__card h3 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .projects-section__images {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 968px) {
