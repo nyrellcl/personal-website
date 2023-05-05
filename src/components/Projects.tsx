@@ -147,7 +147,7 @@ function Projects({ button }: ButtonProps) {
   };
   return (
     <section>
-      <Parallax ref={projectsParallax} pages={4} horizontal>
+      <Parallax ref={projectsParallax} pages={5} horizontal>
         <ProjectPage
           offset={0}
           onPageClick={() => scrollToProjects(1)}
@@ -172,6 +172,9 @@ function Projects({ button }: ButtonProps) {
           projects={projects4}
           gradient="pink"
         />
+        {/* <ProjectPage
+        offset={4}
+        gradient="purple"/> */}
         {button}
       </Parallax>
     </section>

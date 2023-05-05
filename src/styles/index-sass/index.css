@@ -1,12 +1,10 @@
-/*$bg: #F8E9DD;
-$red: #EC755D;
-$cyan: #76B5BC;
-$card-bg: #FFFBF6;
-$dark-brown: #382314;
-$heading: #242D52;
-$footer-bg: #1D1E25;*/
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap");
+.projects-section__card, .projects-section h2 {
+  width: 90%;
+  margin: 0 auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,11 +22,6 @@ body,
   background-color: hsl(32deg, 100%, 85%);
 }
 
-.projects-section__card, .projects-section h2 {
-  width: 90%;
-  margin: 0 auto;
-}
-
 body {
   min-width: 23.4375rem;
 }
@@ -38,7 +31,8 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: "Playfair Display", serif;
 }
 
@@ -207,27 +201,6 @@ h1, h2 {
   margin: 0 auto;
   list-style: none;
 }
-.intro-section .ghost-blurb span {
-  position: absolute;
-  font-weight: 700;
-  color: hsl(0deg, 0%, 20%);
-  font-size: 2rem;
-  background: #fff;
-  padding: 1rem;
-  border-radius: 1rem;
-}
-.intro-section .ghost-blurb span::before {
-  content: "";
-  position: absolute;
-  left: 90%;
-  top: 3.1875rem;
-  transform: rotate(30deg);
-  width: 0;
-  height: 0;
-  border-top: 0.8125rem solid transparent;
-  border-left: 1.625rem solid #fff;
-  border-bottom: 0.8125rem solid transparent;
-}
 
 .about-section {
   width: 100%;
@@ -260,6 +233,7 @@ h1, h2 {
 }
 .about-section__card .page-btn:hover {
   color: hsl(284deg, 40%, 40%);
+  background: transparent;
 }
 
 .skill-section__card {

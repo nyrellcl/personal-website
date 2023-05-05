@@ -1,29 +1,19 @@
 @use "sass:math";
-@import "../Global-sass/colors", "../Global-sass/function";
+@import "../Global-sass/colors", "../Global-sass/function",
+  "../Global-sass//placeholders";
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
+  @extend %base;
 }
 
 html,
 body,
 #root {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  background-color: $primary;
+  @extend %root;
 }
-%width-margin {
-  width: 90%;
-  margin: 0 auto;
-}
+
 body {
   min-width: rem(375);
 }
@@ -33,8 +23,9 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
-h1,h2{
-  font-family: 'Playfair Display', serif;
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
 }
 
 .nav-list {
@@ -46,25 +37,26 @@ h1,h2{
   padding: 1rem;
 }
 
-.project-btn{
-    width: 4rem;
-    height: rem(90);
-    border-radius: 100%;
-    border: none;
-    background-color: transparent;
-    color: hsl(0deg, 0%, 100%);
-    font-size: 3.5rem;
-    transition: all 250ms linear;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &:hover, &:focus{
-        transform: scale(1.5);
-    }
-    &:active{
-        transform: translateX(40px);
-    }
+.project-btn {
+  width: 4rem;
+  height: rem(90);
+  border-radius: 100%;
+  border: none;
+  background-color: transparent;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 3.5rem;
+  transition: all 250ms linear;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover,
+  &:focus {
+    transform: scale(1.5);
+  }
+  &:active {
+    transform: translateX(40px);
+  }
 }
 
 .polygon-begin {
@@ -85,21 +77,20 @@ h1,h2{
 }
 
 .pink {
-  background: linear-gradient(to right, #ffffff 0%, #ffa0a0 100%);
+  background: $pink;
 }
 
 .teal {
-  background: linear-gradient(to right, SlateBlue 0%, #0083af 100%);
+  background: $teal;
 }
 
-.purple{
-    background: linear-gradient(to right, hsl(192, 60%, 50%), hsl(284, 40%, 40%));
+.purple {
+  background: $purple;
 }
 
-.pastel-purple{
-    background: linear-gradient(to right, hsl(83.72deg 47.9% 85.92%), #dadaff);
+.pastel-purple {
+  background: $pastel-purple;
 }
-
 
 .item {
   display: flex;
@@ -204,29 +195,6 @@ h1,h2{
       }
     }
   }
-  .ghost-blurb {
-    span {
-      position: absolute;
-      font-weight: 700;
-      color: $neutral-2;
-      font-size: rem(32);
-      background: #fff;
-      padding: 1rem;
-      border-radius: 1rem;
-      &::before {
-        content: "";
-        position: absolute;
-        left: 90%;
-        top: rem(51);
-        transform: rotate(30deg);
-        width: 0;
-        height: 0;
-        border-top: rem(13) solid transparent;
-        border-left: rem(26) solid #fff;
-        border-bottom: rem(13) solid transparent;
-      }
-    }
-  }
 }
 
 .about-section {
@@ -249,6 +217,7 @@ h1,h2{
       margin: 0 auto;
       &:hover {
         color: $accent-2;
+        background: transparent;
       }
     }
     width: 100%;
@@ -261,7 +230,6 @@ h1,h2{
     text-align: left;
   }
 }
-
 
 .skill-section {
   &__card {
@@ -281,12 +249,12 @@ h1,h2{
     @extend %width-margin;
     h3 {
       color: $secondary;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
     }
     p {
       color: #fff;
     }
-    a{
+    a {
       text-align: center;
     }
     align-items: center;
@@ -379,12 +347,12 @@ h1,h2{
   }
 }
 
-@media only screen and (min-width: 540px){
-  .projects-section{
-    &__card{
+@media only screen and (min-width: 540px) {
+  .projects-section {
+    &__card {
       align-items: center;
     }
-    &__images{
+    &__images {
       width: 80%;
       margin: 0 auto;
     }
@@ -392,9 +360,9 @@ h1,h2{
 }
 
 @media only screen and (min-width: 768px) {
-    .project-btn{
-        font-size: 6rem;
-    }
+  .project-btn {
+    font-size: 6rem;
+  }
   .intro-section {
     &__content {
       h1 {
@@ -422,32 +390,32 @@ h1,h2{
       }
     }
   }
-  .projects-section{
-    h2{
-        width: 100%;
-        font-size: rem(74);
-       padding: 2rem 0 0 2rem;
+  .projects-section {
+    h2 {
+      width: 100%;
+      font-size: rem(74);
+      padding: 2rem 0 0 2rem;
     }
-    &__images{
-        width: 50%;
+    &__images {
+      width: 50%;
     }
-    &__container{
-        margin-top: 0;
-        padding-bottom: 3rem;
-        gap: 1.5rem;
+    &__container {
+      margin-top: 0;
+      padding-bottom: 3rem;
+      gap: 1.5rem;
     }
-    &__card{
-        align-items: center;
-        h3{
-          font-size: rem(32);
-        }
+    &__card {
+      align-items: center;
+      h3 {
+        font-size: rem(32);
+      }
     }
   }
 }
 
-@media only screen and (min-width: 900px){
-  .projects-section{
-    &__images{
+@media only screen and (min-width: 900px) {
+  .projects-section {
+    &__images {
       width: 100%;
     }
   }
@@ -519,15 +487,13 @@ h1,h2{
   }
 }
 
-$color: #fff;
-
 @keyframes ripple {
   0% {
-    box-shadow: 0 0 0 0 rgba($color, 0.3), 0 0 0 1px rgba($color, 0.3),
-      0 0 0 3px rgba($color, 0.3), 0 0 0 5px rgba($color, 0.3);
+    box-shadow: 0 0 0 0 rgba($ripple-color, 0.3), 0 0 0 1px rgba($ripple-color, 0.3),
+      0 0 0 3px rgba($ripple-color, 0.3), 0 0 0 5px rgba($ripple-color, 0.3);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba($color, 0.3), 0 0 0 4px rgba($color, 0.3),
-      0 0 0 20px rgba($color, 0), 0 0 0 30px rgba($color, 0);
+    box-shadow: 0 0 0 0 rgba($ripple-color, 0.3), 0 0 0 4px rgba($ripple-color, 0.3),
+      0 0 0 20px rgba($ripple-color, 0), 0 0 0 30px rgba($ripple-color, 0);
   }
 }

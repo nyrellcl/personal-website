@@ -1,0 +1,21 @@
+@import "./colors";
+
+%width-margin {
+  width: 90%;
+  margin: 0 auto;
+}
+
+%base {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+%root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: $primary;
+}

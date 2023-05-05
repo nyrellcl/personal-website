@@ -7,3 +7,12 @@
   
     @error "This '#{number}' must not have a unit";
   }
+
+  @mixin root-bg-match($selector) {
+    $bg-color: #{map-get(getComputedStyle(#{$selector}), 'background-color') or map-get(getComputedStyle(#{$selector}), 'background')};
+    // getComputedStyle() returns an object representing the computed style of the element.
+    
+    :root, html, body {
+      background-color: $bg-color;
+    }
+  }

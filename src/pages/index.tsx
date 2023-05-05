@@ -3,19 +3,18 @@ import { useRef, useState, useEffect } from "react";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import Hero from "@/components/Hero";
 import { CgArrowLongDownC } from "react-icons/cg";
-import { TbGhost } from "react-icons/tb";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 
-export default function Home( ) {
+export default function Home() {
   const [factorSize, setFactorSize] = useState<number>(1.5);
   const parallaxRef = useRef<IParallax>(null);
-  
+
   function handleFactorResize() {
     if (window.innerWidth >= 768) {
       return setFactorSize(1);
     } else {
-      return factorSize
+      return factorSize;
     }
   }
 
@@ -24,7 +23,7 @@ export default function Home( ) {
 
     window.addEventListener("resize", handleFactorResize);
     return () => window.removeEventListener("resize", handleFactorResize);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -39,20 +38,6 @@ export default function Home( ) {
         <section className="intro-section">
           <Parallax ref={parallaxRef} pages={5}>
             <ParallaxLayer offset={0} speed={1}></ParallaxLayer>
-            <ParallaxLayer offset={1.3} speed={-0.3}>
-              <article className="ghost-blurb">
-                <TbGhost
-                  style={{
-                    display: "inline-block",
-                    width: "8em",
-                    height: "8em",
-                    marginLeft: "70%",
-                    position: "relative",
-                  }}
-                />
-                <span>Enjoy!</span>
-              </article>
-            </ParallaxLayer>
             <ParallaxLayer offset={0} speed={1.5}>
               <Hero
                 button={
@@ -74,7 +59,7 @@ export default function Home( ) {
                 justifyContent: "center",
               }}
               offset={1}
-              speed={1.5}
+              speed={1}
               factor={factorSize}
             >
               <About
@@ -90,7 +75,8 @@ export default function Home( ) {
               />
             </ParallaxLayer>
             <ParallaxLayer offset={2} speed={1.2} factor={1.05}>
-              <Projects button={
+              <Projects
+                button={
                   <button
                     type="button"
                     className="page-btn"
@@ -98,7 +84,8 @@ export default function Home( ) {
                   >
                     <CgArrowLongDownC />
                   </button>
-                }/>
+                }
+              />
             </ParallaxLayer>
           </Parallax>
         </section>
@@ -106,6 +93,3 @@ export default function Home( ) {
     </>
   );
 }
-
-
-
