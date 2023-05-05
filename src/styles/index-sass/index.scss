@@ -72,6 +72,35 @@ p {
   }
 }
 
+.polygon-begin {
+  background-color: #20232f;
+  clip-path: polygon(0% 0, 70% 0, 50% 100%, 0% 100%);
+}
+
+.polygon-end {
+  clip-path: polygon(70% 0, 100% 0, 100% 100%, 50% 100%);
+}
+
+.polygon-begin,
+.polygon-end {
+  position: absolute;
+  width: 170%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.pink {
+  background: linear-gradient(to right, deeppink 0%, coral 100%);
+}
+
+.teal {
+  background: linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%);
+}
+
+.tomato {
+  background: linear-gradient(to right, tomato 0%, gold 100%);
+}
+
 .item {
   display: flex;
   align-items: center;
@@ -209,7 +238,7 @@ p {
 .projects-section {
   width: 100%;
   height: 100%;
-  background-color: $accent-2;;
+  //background-color: $accent-2;
   h2 {
     @extend %width-margin;
     padding: 2rem 0;
@@ -217,11 +246,11 @@ p {
   }
   &__card {
     @extend %width-margin;
-    h3{
-        color: $secondary;
+    h3 {
+      color: $secondary;
     }
-    p{
-        color: #fff;
+    p {
+      color: #fff;
     }
   }
   &__images {
@@ -261,6 +290,7 @@ p {
   .about-section {
     &__card {
       gap: 2rem;
+      justify-content: flex-start;
       h2 {
         font-size: rem(48);
       }
@@ -298,16 +328,17 @@ p {
   h2 {
     font-size: rem(48);
   }
-  &__container{
+  &__container {
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: center;
     gap: 3rem;
   }
-  &__card{
+  &__card {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
   }
 }
 
@@ -373,6 +404,7 @@ p {
         margin: 0;
       }
       position: relative;
+      justify-content: center;
       .skill-section {
         &__card {
           top: 40%;
@@ -386,9 +418,13 @@ p {
   }
 
   .projects-section {
+    h2 {
+      font-size: rem(74);
+    }
     &__container {
       display: flex;
       align-items: center;
+      flex-direction: row;
     }
     &__card {
       display: flex;
