@@ -136,13 +136,13 @@ function Projects() {
           offset={2}
           onPageClick={() => scrollToProjects(3)}
           projects={projects3}
-          gradient="tomato"
+          gradient="cyan"
         />
          <ProjectPage
           offset={3}
           onPageClick={() => scrollToProjects(0)}
           projects={projects4}
-          gradient="teal"
+          gradient="purple"
         /> 
       </Parallax>
     </section>

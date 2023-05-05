@@ -100,7 +100,7 @@ p {
 }
 
 .polygon-begin {
-  background-color: #20232f;
+  background-color: hsl(0deg, 5%, 12%);
   -webkit-clip-path: polygon(0% 0, 70% 0, 50% 100%, 0% 100%);
           clip-path: polygon(0% 0, 70% 0, 50% 100%, 0% 100%);
 }
@@ -128,6 +128,18 @@ p {
 
 .tomato {
   background: linear-gradient(to right, tomato 0%, gold 100%);
+}
+
+.purple {
+  background: linear-gradient(to right, hsl(192deg, 60%, 50%), hsl(284deg, 40%, 40%));
+}
+
+.cyan {
+  background: linear-gradient(to right, hsl(192deg, 97%, 29%), transparent);
+}
+
+.smoke {
+  background: linear-gradient(to bottom, #333333, #000000);
 }
 
 .item {

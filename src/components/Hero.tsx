@@ -49,7 +49,7 @@ function Hero({ button }: HeroProps): JSX.Element {
           >
             <Image src={linkedIn} alt="linked-in-icon" />
           </Link>
-          <Link href="./src/assets/Nyrell Leonor Resume-CV.pdf" download={true}>
+          <Link href="/Nyrell-Leonor-Resume-CV.pdf" download>
             <Image src={resume} alt="resume-icon" />
           </Link>
           <Link href="https://github.com/nyrellcl" target="_blank">
