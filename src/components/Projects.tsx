@@ -136,7 +136,7 @@ function Projects() {
           offset={2}
           onPageClick={() => scrollToProjects(3)}
           projects={projects3}
-          gradient="cyan"
+          gradient="pastel-purple"
         />
          <ProjectPage
           offset={3}

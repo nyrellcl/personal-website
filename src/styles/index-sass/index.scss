@@ -111,29 +111,21 @@ p {
 }
 
 .pink {
-  background: linear-gradient(to right, deeppink 0%, coral 100%);
+  background: linear-gradient(to right, #ffffff 0%, #ffa0a0 100%);
 }
 
 .teal {
-  background: linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%);
-}
-
-.tomato {
-  background: linear-gradient(to right, tomato 0%, gold 100%);
+  background: linear-gradient(to right, SlateBlue 0%, #0083af 100%);
 }
 
 .purple{
     background: linear-gradient(to right, hsl(192, 60%, 50%), hsl(284, 40%, 40%));
 }
 
-.cyan{
-    background: linear-gradient(to right, hsl(192, 97%, 29%), transparent)
+.pastel-purple{
+    background: linear-gradient(to right, hsl(83.72deg 47.9% 85.92%), #cfcfff);
 }
 
-.smoke{
-    background: linear-gradient(to bottom, #333333, #000000);
-
-}
 
 .item {
   display: flex;
