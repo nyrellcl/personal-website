@@ -14,7 +14,7 @@ function Hero({ button }: ButtonProps): JSX.Element {
 
   useEffect(() => {
     const typedOptions = {
-      strings: ["Front End Developer", "Creative", "Designer"],
+      strings: ["Developer", "Creative", "Designer"],
       typeSpeed: 70,
       loop: true,
       backSpeed: 70,

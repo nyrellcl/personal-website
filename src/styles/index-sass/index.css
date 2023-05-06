@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arapey&family=Montserrat:wght@400;700&display=swap");
 .projects-section__card, .projects-section h2 {
   width: 90%;
   margin: 0 auto;
@@ -33,7 +32,7 @@ p {
 
 h1,
 h2 {
-  font-family: "Playfair Display", serif;
+  font-family: "Arapey", serif;
   font-weight: 400;
 }
 
@@ -418,11 +417,17 @@ h2 {
   .project-btn {
     font-size: 6rem;
   }
+  .intro-section__content {
+    align-items: center;
+  }
   .intro-section__content h1 {
     font-size: 5.25rem;
   }
   .intro-section__content p {
     font-size: 2.375rem;
+  }
+  .intro-section__content .profession-container {
+    justify-content: center;
   }
   .about-section__card h2 {
     font-size: 4.625rem;
@@ -467,13 +472,13 @@ h2 {
   }
   .skill-btn {
     position: absolute;
-    top: -20rem;
+    top: -15rem;
   }
   .container {
     position: absolute;
     left: 0;
     right: 0;
-    top: -20rem;
+    top: -18rem;
   }
 }
 @media only screen and (min-width: 968px) {
