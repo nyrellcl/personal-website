@@ -79,7 +79,7 @@ export default function Home() {
                 button={
                   <button
                     type="button"
-                    className="page-btn"
+                    className="project-page-btn"
                     onClick={() => parallaxRef.current?.scrollTo(3)}
                   >
                     <CgArrowLongDownC />

@@ -30,16 +30,22 @@ function Nav() {
               href="https://www.linkedin.com/in/nyrell-leonor-39180a1a4/"
               target="_blank"
             >
-              <Image src={linkedIn} alt="linked-in-icon" />
+              <li>
+              Linkedin
+
+              </li>
             </Link>
             <Link href="/Nyrell-Leonor-Resume-CV.pdf" download>
-              <Image src={resume} alt="resume-icon" />
+              <li>
+              Resume
+
+              </li>
             </Link>
             <Link href="https://github.com/nyrellcl" target="_blank">
-              <Image src={github} alt="github-icon" />
+             <li>Github</li>
             </Link>
             <Link href="mailto:nyrell.leonor2000@gmail.com">
-              <Image src={mail} alt="envelope-icon" />
+              <li>E-mail</li>
             </Link>
           </ul>
       </nav>

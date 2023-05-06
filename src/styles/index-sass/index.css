@@ -161,6 +161,33 @@ h2 {
   height: 100%;
 }
 
+.project-page-btn {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  border: none;
+  background-color: hsl(29deg, 75%, 60%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  transition: all 250ms linear;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  position: absolute;
+  left: 9.5%;
+  top: 80%;
+}
+.project-page-btn:hover, .project-page-btn:focus {
+  background-color: transparent;
+  transform: scale(1.5);
+  color: hsl(29deg, 75%, 60%);
+}
+.project-page-btn:active {
+  transform: translateY(5px);
+}
+
 .page-btn {
   width: 4rem;
   height: 4rem;
@@ -211,6 +238,10 @@ h2 {
   padding-top: 5rem;
   font-size: 2rem;
   justify-content: center;
+}
+.nav-social__list li {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(0deg, 0%, 20%);
 }
 .nav-social__list.active {
   opacity: 1;
@@ -293,6 +324,24 @@ h2 {
   padding: 2rem 0;
   color: hsl(34deg, 100%, 75%);
 }
+.projects-section .project-page-btn {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  border: none;
+  background-color: hsl(29deg, 75%, 60%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  transition: all 250ms linear;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  position: absolute;
+  left: 9.5%;
+  top: 80%;
+}
 .projects-section__card {
   align-items: center;
 }
@@ -313,6 +362,10 @@ h2 {
 }
 
 @media only screen and (min-width: 375px) {
+  .project-page-btn {
+    left: 8%;
+    top: 90%;
+  }
   .container {
     position: static;
   }
@@ -388,6 +441,9 @@ h2 {
 }
 
 @media only screen and (min-width: 540px) {
+  .project-page-btn {
+    left: 9%;
+  }
   .projects-section__card {
     align-items: center;
   }
@@ -483,6 +539,10 @@ h2 {
   }
 }
 @media only screen and (min-width: 968px) {
+  .project-page-btn {
+    left: 9.5%;
+    top: 80%;
+  }
   .intro-section__content h1 {
     font-size: 6.25rem;
   }

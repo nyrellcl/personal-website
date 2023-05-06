@@ -11,6 +11,8 @@ import typingGame from "../assets/typing-game.png";
 import singlePage from "../assets/single-page.png";
 import githubSearch from "../assets/github-search.png";
 import toDo from "../assets/todo.png";
+import loop from "../assets/loop-studios.png"
+import advice from "../assets/advice.png"
 
 interface ButtonProps {
   button: React.ReactNode;
@@ -137,6 +139,21 @@ const projects4 = [
   },
 ];
 
+const projects5 = [
+  {
+    name: "Loopstudios Website",
+    description: "HTML | SASS | JavaScript",
+    image: loop,
+    link:"https://stalwart-puffpuff-88d009.netlify.app"
+  },
+{
+  name: "Advice Generator Applicaton",
+  description: "HTML | SASS | JavaScript | API",
+  image: advice,
+  link: "https://nyrellcl.github.io/advice-generator/"
+}
+]
+
 function Projects({ button }: ButtonProps) {
   const projectsParallax = useRef<IParallax>(null);
 
@@ -168,13 +185,15 @@ function Projects({ button }: ButtonProps) {
         />
         <ProjectPage
           offset={3}
-          onPageClick={() => scrollToProjects(0)}
+          onPageClick={() => scrollToProjects(4)}
           projects={projects4}
           gradient="pink"
         />
-        {/* <ProjectPage
+        <ProjectPage
         offset={4}
-        gradient="purple"/> */}
+        gradient="purple"
+        projects={projects5}
+        onPageClick={()=> scrollToProjects(0)}/>
         {button}
       </Parallax>
     </section>
