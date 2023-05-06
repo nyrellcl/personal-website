@@ -210,6 +210,7 @@ h2 {
   background-color: hsl(34deg, 100%, 75%);
   padding-top: 5rem;
   font-size: 2rem;
+  justify-content: center;
 }
 .nav-social__list.active {
   opacity: 1;
