@@ -180,6 +180,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
   &__menu {
     z-index: 10;
   }
@@ -225,6 +226,7 @@ h2 {
       display: flex;
       gap: 0.4rem;
       align-items: center;
+      justify-content: center;
       width: 100%;
       p {
         &:nth-child(2) {
@@ -320,8 +322,8 @@ h2 {
     }
     &__content {
       height: 100%;
-      text-align: left;
-      align-items: start;
+      text-align: center;
+      
       h1 {
         font-size: rem(74);
       }

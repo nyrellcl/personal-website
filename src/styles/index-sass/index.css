@@ -189,6 +189,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 }
 .nav-social__menu {
   z-index: 10;
@@ -234,6 +235,7 @@ h2 {
   display: flex;
   gap: 0.4rem;
   align-items: center;
+  justify-content: center;
   width: 100%;
 }
 .intro-section__content .profession-container p:nth-child(2) {
@@ -320,8 +322,7 @@ h2 {
   }
   .intro-section__content {
     height: 100%;
-    text-align: left;
-    align-items: start;
+    text-align: center;
   }
   .intro-section__content h1 {
     font-size: 4.625rem;
