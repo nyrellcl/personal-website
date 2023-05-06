@@ -38,7 +38,7 @@ export default function Home() {
         <section className="intro-section">
           <Parallax ref={parallaxRef} pages={5}>
             <ParallaxLayer offset={0} speed={1}></ParallaxLayer>
-            <ParallaxLayer offset={0} speed={1.5}>
+            <ParallaxLayer offset={0} speed={-0}>
               <Hero
                 button={
                   <button
@@ -59,7 +59,7 @@ export default function Home() {
                 justifyContent: "center",
               }}
               offset={1}
-              speed={1}
+              speed={-0}
               factor={factorSize}
             >
               <About
@@ -74,7 +74,7 @@ export default function Home() {
                 }
               />
             </ParallaxLayer>
-            <ParallaxLayer offset={2} speed={1.2} factor={1.05}>
+            <ParallaxLayer offset={2} speed={1} factor={1.05}>
               <Projects
                 button={
                   <button

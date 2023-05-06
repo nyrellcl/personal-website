@@ -17,9 +17,9 @@ function Skills() {
   const { size, ...rest } = useSpring({
     ref: springApi,
     config: config.stiff,
-    from: { size: "20%", background: "hsl(192, 60%, 50%)" },
+    from: { size: "skill-btn", background: "hsl(192, 60%, 50%)" },
     to: {
-      size: open ? "100%" : "20%",
+      size: open ? "skill-btn-full" : "skill-btn",
       background: open ? "transparent" : "hsl(192, 60%, 50%)",
     },
   });

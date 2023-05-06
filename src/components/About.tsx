@@ -7,6 +7,8 @@ interface ButtonProps {
   button: React.ReactNode;
 }
 
+
+
 function About({ button }: ButtonProps) {
   return (
     <section className="about-section">
