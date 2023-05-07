@@ -301,7 +301,6 @@ h2 {
   line-height: 2rem;
 }
 .about-section__card .page-btn {
-  background-color: hsl(284deg, 40%, 40%);
   margin: 0 auto;
 }
 .about-section__card .page-btn:hover {
@@ -443,7 +442,7 @@ h2 {
 
 @media only screen and (min-width: 540px) {
   .project-page-btn {
-    left: 9%;
+    left: 45%;
   }
   .projects-section__card {
     align-items: center;
@@ -541,7 +540,7 @@ h2 {
 }
 @media only screen and (min-width: 968px) {
   .project-page-btn {
-    left: 9.5%;
+    left: 48%;
     top: 80%;
   }
   .intro-section__content h1 {

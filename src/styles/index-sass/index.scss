@@ -288,7 +288,6 @@ h2 {
       line-height: 2rem;
     }
     .page-btn {
-      background-color: $accent-2;
       margin: 0 auto;
       &:hover {
         color: $accent-2;
@@ -453,7 +452,7 @@ h2 {
 
 @media only screen and (min-width: 540px) {
   .project-page-btn{
-    left: 9%;
+    left: 45%;
   }
   .projects-section {
     &__card {
@@ -573,7 +572,7 @@ h2 {
 
 @media only screen and (min-width: 968px) {
   .project-page-btn{
-    left: 9.5%;
+    left: 48%;
     top: 80%;
   }
   .intro-section {
