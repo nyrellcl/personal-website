@@ -388,9 +388,31 @@ h6 {
   display: flex;
   align-items: center;
   padding-top: 2rem;
+  gap: 2rem;
 }
 .contact-section__content__mail h4 {
   text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+}
+.contact-section__content__mail a {
+  color: hsl(0deg, 5%, 12%);
+}
+.contact-section__content__mail a button {
+  width: 9.375rem;
+  height: 2.25rem;
+  border-radius: 1.5rem;
+  border: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background-color: hsl(155deg, 38%, 48%);
+  color: hsl(32deg, 100%, 85%);
+  transition: all 250ms linear;
+}
+.contact-section__content__mail a button:hover, .contact-section__content__mail a button:focus {
+  background: transparent;
+  border: 0.0625rem solid hsl(155deg, 38%, 48%);
+  color: hsl(155deg, 38%, 48%);
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 375px) {

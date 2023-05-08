@@ -24,9 +24,10 @@ function Contact({ button }: ButtonProps) {
             challenging roles that strengthens my skills as a developer.
           </p>
           <article className="contact-section__content__mail">
-            <h4>Get in touch!</h4>
+            <h4>Get in touch</h4>
             <Link href="mailto:nyrell.leonor2000@gmail.com?subject=%20Connect%20with%20me%20">
-              Connect
+                <button type="button">Contact</button>
+           
             </Link>
           </article>
         </article>

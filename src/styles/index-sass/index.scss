@@ -384,8 +384,30 @@ h6 {
       display: flex;
       align-items: center;
       padding-top: 2rem;
+      gap: 2rem;
       h4 {
         text-transform: uppercase;
+        letter-spacing: rem(1);
+      }
+      a{
+        color: $neutral;
+        button{
+          width: rem(150);
+          height: rem(36);
+          border-radius: rem(24);
+          border: none;
+          font-size: rem(24);
+          text-transform: uppercase;
+          background-color: $accent-3;
+          color: $primary;
+          transition: all 250ms linear;
+          &:hover, &:focus{
+            background: transparent;
+            border: rem(1) solid $accent-3;
+            color: $accent-3;
+            cursor: pointer;
+          }
+        }
       }
     }
   }
