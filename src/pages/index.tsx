@@ -75,7 +75,7 @@ export default function Home() {
                 }
               />
               </ParallaxLayer>
-            <ParallaxLayer offset={2} speed={1.5} factor={factorSize}>
+            <ParallaxLayer offset={2} speed={1.5} factor={1.2}>
               <Projects
                 button={
                   <button
