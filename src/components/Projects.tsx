@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import Image, { StaticImageData } from "next/image";
 import { CgArrowLongRightC } from "react-icons/cg";
@@ -156,23 +156,6 @@ const projects5 = [
 
 function Projects({ button }: ButtonProps) {
   const projectsParallax = useRef<IParallax>(null);
-  const [projectFactorSize, setProjectFactorSize] = useState<number>(1);
-
-  function handleContactFactorResize() {
-    if (window.innerWidth >= 768) {
-      return projectFactorSize;
-    } else {
-      return setProjectFactorSize(1.25);
-    }
-  }
-
-  useEffect(() => {
-    handleContactFactorResize();
-
-    window.addEventListener("resize", handleContactFactorResize);
-    return () => window.removeEventListener("resize", handleContactFactorResize);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   const scrollToProjects = (to: number) => {
     if (projectsParallax.current) {
