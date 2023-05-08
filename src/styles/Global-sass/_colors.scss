@@ -1,7 +1,6 @@
 // apricot beige scheme
 
-
-$primary:  hsl(32, 100%, 85%);
+$primary: hsl(32, 100%, 85%);
 //headings
 $secondary: hsl(29, 75%, 60%);
 //CTA
@@ -11,13 +10,14 @@ $neutral: hsl(0, 5%, 12%);
 // other design elements eg. borders
 $neutral-2: hsl(0, 0, 20%);
 
-$neutral-3:  hsl(0, 0%, 50%);
+$neutral-3: hsl(0, 0%, 50%);
 
-$accent-1:  hsl(192, 60%, 50%);
+$accent-1: hsl(192, 60%, 50%);
 $accent-2: hsl(284, 40%, 40%);
+$accent-3: hsl(155, 38%, 48%);
 
 //linear gradients
-$pink:  linear-gradient(to right, #ffffff 0%, #ffa0a0 100%);
+$pink: linear-gradient(to right, #ffffff 0%, #ffa0a0 100%);
 $teal: linear-gradient(to right, SlateBlue 0%, #0083af 100%);
 $purple: linear-gradient(to right, hsl(192, 60%, 50%), hsl(284, 40%, 40%));
 $pastel-purple: linear-gradient(to right, hsl(83.72deg 47.9% 85.92%), #dadaff);

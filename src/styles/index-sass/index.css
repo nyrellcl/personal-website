@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Arapey&family=Montserrat:wght@400;700&display=swap");
-.projects-section__card, .projects-section h2 {
+.contact-section__content, .projects-section__card, .projects-section h2 {
   width: 90%;
   margin: 0 auto;
 }
@@ -28,10 +28,15 @@ body {
 p {
   letter-spacing: 0.0625rem;
   font-family: "Montserrat", sans-serif;
+  line-height: 1.75rem;
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Arapey", serif;
   font-weight: 400;
 }
@@ -68,6 +73,12 @@ h2 {
 }
 .project-btn:active {
   transform: translateX(40px);
+}
+
+.polygon-top-half {
+  background-color: black;
+  -webkit-clip-path: polygon(0% 0, 100% 0, 100% 50%, 50% 50%, 0% 50%);
+          clip-path: polygon(0% 0, 100% 0, 100% 50%, 50% 50%, 0% 50%);
 }
 
 .polygon-begin {
@@ -116,6 +127,8 @@ h2 {
   font-weight: 700;
   color: hsl(0deg, 0%, 20%);
   text-transform: uppercase;
+  background: transparent;
+  border: 0.125rem solid hsl(0deg, 0%, 20%);
   font-size: 0.875rem;
 }
 
@@ -150,6 +163,7 @@ h2 {
 .skill-btn::before {
   content: "Click me!";
   position: absolute;
+  text-transform: uppercase;
   top: 45%;
   right: 0;
   left: 0;
@@ -242,6 +256,10 @@ h2 {
 .nav-social__list li {
   font-family: "Montserrat", sans-serif;
   color: hsl(0deg, 0%, 20%);
+  transition: all 250ms linear;
+}
+.nav-social__list li:hover, .nav-social__list li:focus {
+  color: hsl(155deg, 38%, 48%);
 }
 .nav-social__list.active {
   opacity: 1;
@@ -271,7 +289,7 @@ h2 {
 }
 .intro-section__content .profession-container p:nth-child(2) {
   font-weight: 700;
-  color: hsl(284deg, 40%, 40%);
+  color: hsl(155deg, 38%, 48%);
 }
 
 .about-section {
@@ -281,7 +299,6 @@ h2 {
 .about-section__card {
   width: 100%;
   height: 100%;
-  background-color: hsl(34deg, 100%, 75%);
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -302,10 +319,6 @@ h2 {
 }
 .about-section__card .page-btn {
   margin: 0 auto;
-}
-.about-section__card .page-btn:hover {
-  color: hsl(284deg, 40%, 40%);
-  background: transparent;
 }
 
 .skill-section {
@@ -359,6 +372,25 @@ h2 {
   width: 100%;
   height: 100%;
   border-radius: 0.5rem;
+}
+
+.contact-section {
+  position: relative;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-section__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-section__content__mail {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+}
+.contact-section__content__mail h4 {
+  text-transform: uppercase;
 }
 
 @media only screen and (min-width: 375px) {
@@ -438,6 +470,12 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.contact-section__content h3 {
+  font-size: 5.3125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
 }
 
 @media only screen and (min-width: 540px) {

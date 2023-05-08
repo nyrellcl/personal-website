@@ -1,6 +1,5 @@
 import React from "react";
 import Typed from "typed.js";
-import Link from "next/link";
 import { useRef, useEffect } from "react";
 import { animated } from "@react-spring/web";
 import Nav from "./Nav";
@@ -17,7 +16,7 @@ function Hero({ button }: ButtonProps): JSX.Element {
       strings: ["Developer", "Creative", "Designer"],
       typeSpeed: 70,
       loop: true,
-      backSpeed: 70,
+      backSpeed: 80,
       showCursor: false,
     };
 

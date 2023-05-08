@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import { CgArrowLongDownC } from "react-icons/cg";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   const [factorSize, setFactorSize] = useState<number>(1.5);
@@ -37,7 +38,6 @@ export default function Home() {
       <main className="main">
         <section className="intro-section">
           <Parallax ref={parallaxRef} pages={5}>
-            <ParallaxLayer offset={0} speed={1}></ParallaxLayer>
             <ParallaxLayer offset={0} speed={1.5}>
               <Hero
                 button={
@@ -51,6 +51,7 @@ export default function Home() {
                 }
               />
             </ParallaxLayer>
+            <ParallaxLayer offset={1} style={{background: "hsl(34deg, 100%, 75%)"}} speed={0.4}></ParallaxLayer>
 
             <ParallaxLayer
               style={{
@@ -59,7 +60,7 @@ export default function Home() {
                 justifyContent: "center",
               }}
               offset={1}
-              speed={1}
+              speed={1.5}
               factor={factorSize}
             >
               <About
@@ -73,8 +74,8 @@ export default function Home() {
                   </button>
                 }
               />
-            </ParallaxLayer>
-            <ParallaxLayer offset={2} speed={1} factor={1.25}>
+              </ParallaxLayer>
+            <ParallaxLayer offset={2} speed={1.5} factor={1.1}>
               <Projects
                 button={
                   <button
@@ -86,6 +87,22 @@ export default function Home() {
                   </button>
                 }
               />
+            </ParallaxLayer>
+
+            <ParallaxLayer
+              offset={3}
+              speed={1.5}
+            >
+              <Contact
+               button={
+                <button
+                  type="button"
+                  className="project-page-btn"
+                  onClick={() => parallaxRef.current?.scrollTo(0)}
+                >
+                  <CgArrowLongDownC />
+                </button>
+              }/>
             </ParallaxLayer>
           </Parallax>
         </section>
