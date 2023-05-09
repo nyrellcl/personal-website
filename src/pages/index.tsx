@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useRef, useState, useEffect } from "react";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import Hero from "@/components/Hero";
-import { CgArrowLongDownC } from "react-icons/cg";
+import { CgArrowLongDownC, CgArrowLongUpC } from "react-icons/cg";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
@@ -37,7 +37,7 @@ export default function Home() {
       </Head>
       <main className="main">
         <section className="intro-section">
-          <Parallax ref={parallaxRef} pages={5}>
+          <Parallax ref={parallaxRef} pages={4}>
             <ParallaxLayer offset={0} speed={1.5}>
               <Hero
                 button={
@@ -92,15 +92,16 @@ export default function Home() {
             <ParallaxLayer
               offset={3}
               speed={1.5}
+              factor={0.5}
             >
               <Contact
                button={
                 <button
                   type="button"
-                  className="project-page-btn"
+                  className="page-btn"
                   onClick={() => parallaxRef.current?.scrollTo(0)}
                 >
-                  <CgArrowLongDownC />
+                  <CgArrowLongUpC />
                 </button>
               }/>
             </ParallaxLayer>
