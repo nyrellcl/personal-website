@@ -393,7 +393,7 @@ h6 {
       &__info {
         display: flex;
         align-items: center;
-        gap:1rem;
+        gap: 1rem;
       }
       h4 {
         text-transform: uppercase;
@@ -505,55 +505,55 @@ h6 {
       }
     }
   }
-}
 
-.skill-section {
-  width: 100%;
-  &__card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-.projects-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  h2 {
-    font-size: rem(48);
-  }
-  &__container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    gap: 3rem;
-    margin-top: 2rem;
-    padding-bottom: 3rem;
-  }
-  &__card {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-}
-.contact-section {
-  &__content {
-    @extend %width-margin;
-    h3 {
-      font-size: rem(85);
-      text-transform: uppercase;
-      letter-spacing: rem(2);
+  .skill-section {
+    width: 100%;
+    &__card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
-}
 
-.footer-section{
-  &__nav{
-    &__list{
+  .projects-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-size: rem(48);
+    }
+    &__container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
       justify-content: center;
+      gap: 3rem;
+      margin-top: 2rem;
+      padding-bottom: 3rem;
+    }
+    &__card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+  .contact-section {
+    &__content {
+      @extend %width-margin;
+      h3 {
+        font-size: rem(85);
+        text-transform: uppercase;
+        letter-spacing: rem(2);
+      }
+    }
+  }
+
+  .footer-section {
+    &__nav {
+      &__list {
+        justify-content: center;
+      }
     }
   }
 }
@@ -676,12 +676,12 @@ h6 {
     right: 0;
     top: -18rem;
   }
-}
 
-.footer-section{
-  &__nav{
-    &__list{
-      justify-content: flex-start;
+  .footer-section {
+    &__nav {
+      &__list {
+        justify-content: flex-start;
+      }
     }
   }
 }
@@ -760,14 +760,14 @@ h6 {
   .contact-section {
     &__content {
       justify-content: center;
-      h3{
+      h3 {
         font-size: rem(160);
         width: 50%;
       }
       p {
         width: 50%;
       }
-      &__mail{
+      &__mail {
         align-items: flex-start;
       }
     }
