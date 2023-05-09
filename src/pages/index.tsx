@@ -51,7 +51,7 @@ export default function Home() {
                 }
               />
             </ParallaxLayer>
-            <ParallaxLayer offset={1} style={{background: "hsl(34deg, 100%, 75%)"}} speed={0.4}></ParallaxLayer>
+            <ParallaxLayer offset={1} style={{background: "hsl(34deg, 100%, 75%)"}} speed={0.4} factor={factorSize}></ParallaxLayer>
 
             <ParallaxLayer
               style={{
