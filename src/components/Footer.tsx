@@ -24,6 +24,7 @@ function Footer() {
             <li>E-mail</li>
           </Link>
         </ul>
+        <small className="attribution"><h5>Design & code by Nyrell Leonor © 2023</h5></small>
       </nav>
     </footer>
   );

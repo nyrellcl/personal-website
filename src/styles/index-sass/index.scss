@@ -430,6 +430,11 @@ h6 {
   &__nav {
     display: flex;
     padding-top: 1rem;
+    .attribution{
+      h5{
+        font-family: 'Montserrat', sans-serif;
+      }
+    }
     &__list {
       display: flex;
       width: 100%;
@@ -541,11 +546,25 @@ h6 {
   }
   .contact-section {
     &__content {
-      @extend %width-margin;
+      width: 90%;
+      margin: 0 auto;
       h3 {
         font-size: rem(85);
         text-transform: uppercase;
         letter-spacing: rem(2);
+      }
+    }
+  }
+
+  .footer-section {
+    &__nav {
+      flex-wrap: wrap;
+      gap: 2rem;
+    justify-content: center;
+      &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
       }
     }
   }
@@ -672,8 +691,11 @@ h6 {
 
   .footer-section {
     &__nav {
+      justify-content: space-between;
       &__list {
+        display: flex;
         justify-content: flex-start;
+        flex: 0 0 50%;
       }
     }
   }
@@ -748,10 +770,10 @@ h6 {
     }
   }
 
-  .contact-section{
-    &__content{
-      &__mail{
-        h4{
+  .contact-section {
+    &__content {
+      &__mail {
+        h4 {
           font-size: rem(30);
         }
       }
