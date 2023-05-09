@@ -747,6 +747,16 @@ h6 {
       width: 80%;
     }
   }
+
+  .contact-section{
+    &__content{
+      &__mail{
+        h4{
+          font-size: rem(30);
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 1300px) {

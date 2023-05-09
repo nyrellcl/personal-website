@@ -4,11 +4,9 @@ import Image, { StaticImageData } from "next/image";
 import { CgArrowLongRightC } from "react-icons/cg";
 import Link from "next/link";
 import coffee from "../assets/coffee.png";
-import arch from "../assets/arch-studio.png";
 import myTeam from "../assets/myteam.png";
 import budgetWeb from "../assets/react-challenge.png";
 import typingGame from "../assets/typing-game.png";
-import singlePage from "../assets/single-page.png";
 import githubSearch from "../assets/github-search.png";
 import toDo from "../assets/todo.png";
 import loop from "../assets/loop-studios.png"
@@ -126,21 +124,6 @@ const projects3 = [
 ];
 const projects4 = [
   {
-    name: "Arch Studio Website",
-    description: "TailWind | JavaScript",
-    image: arch,
-    link: "https://tranquil-yeot-eadbeb.netlify.app/",
-  },
-  {
-    name: "Single Page Design",
-    description: "HTML | SASS ",
-    image: singlePage,
-    link: "https://nyrellcl.github.io/single-landing-page/",
-  },
-];
-
-const projects5 = [
-  {
     name: "Loopstudios Website",
     description: "HTML | SASS | JavaScript",
     image: loop,
@@ -152,7 +135,7 @@ const projects5 = [
   image: advice,
   link: "https://nyrellcl.github.io/advice-generator/"
 }
-]
+];
 
 function Projects({ button }: ButtonProps) {
   const projectsParallax = useRef<IParallax>(null);
@@ -165,7 +148,7 @@ function Projects({ button }: ButtonProps) {
   return (
     <>
       {button}
-      <Parallax ref={projectsParallax} pages={5} horizontal>
+      <Parallax ref={projectsParallax} pages={4} horizontal>
         <ProjectPage
           offset={0}
           onPageClick={() => scrollToProjects(1)}
@@ -186,15 +169,10 @@ function Projects({ button }: ButtonProps) {
         />
         <ProjectPage
           offset={3}
-          onPageClick={() => scrollToProjects(4)}
+          onPageClick={() => scrollToProjects(0)}
           projects={projects4}
           gradient="pink"
         />
-        <ProjectPage
-        offset={4}
-        gradient="purple"
-        projects={projects5}
-        onPageClick={()=> scrollToProjects(0)}/>
         
       </Parallax>
     </>

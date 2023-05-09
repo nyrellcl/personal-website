@@ -17,7 +17,9 @@ function Contact({ button }: ButtonProps) {
           <p>
             My goal is to work alongside talented people and contribute to
             products that enhances the lives of users.
-            <br/>
+          </p>
+          <br/>
+          <p>
             I am always looking to learn more and am open to taking on
             challenging roles that strengthens my skills as a developer.
           </p>
