@@ -378,11 +378,11 @@ h6 {
   position: relative;
   max-width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 .contact-section__content {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 .contact-section__content p {
   color: hsl(0deg, 0%, 50%);
@@ -535,6 +535,10 @@ h6 {
   letter-spacing: 0.125rem;
 }
 
+.footer-section__nav__list {
+  justify-content: center;
+}
+
 @media only screen and (min-width: 540px) {
   .project-page-btn {
     left: 45%;
@@ -633,6 +637,10 @@ h6 {
     top: -18rem;
   }
 }
+.footer-section__nav__list {
+  justify-content: flex-start;
+}
+
 @media only screen and (min-width: 968px) {
   .project-page-btn {
     left: 48%;
@@ -694,9 +702,15 @@ h6 {
   .contact-section__content {
     justify-content: center;
   }
-  .contact-section__content p {
-    padding-left: 3rem;
+  .contact-section__content h3 {
+    font-size: 10rem;
     width: 50%;
+  }
+  .contact-section__content p {
+    width: 50%;
+  }
+  .contact-section__content__mail {
+    align-items: flex-start;
   }
 }
 @-webkit-keyframes ripple {

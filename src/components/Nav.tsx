@@ -4,10 +4,6 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 import logo from "../assets/personal-logo.png";
-import linkedIn from "../assets/linkedin.svg";
-import resume from "../assets/resume.svg";
-import github from "../assets/github.svg";
-import mail from "../assets/envelope.svg";
 
 function Nav() {
   const [isClicked, setIsClicked] = useState<boolean>(false);

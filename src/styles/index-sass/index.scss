@@ -376,10 +376,10 @@ h6 {
   position: relative;
   max-width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   &__content {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     p {
       color: $neutral-3;
     }
@@ -550,6 +550,14 @@ h6 {
   }
 }
 
+.footer-section{
+  &__nav{
+    &__list{
+      justify-content: center;
+    }
+  }
+}
+
 @media only screen and (min-width: 540px) {
   .project-page-btn {
     left: 45%;
@@ -670,6 +678,14 @@ h6 {
   }
 }
 
+.footer-section{
+  &__nav{
+    &__list{
+      justify-content: flex-start;
+    }
+  }
+}
+
 @media only screen and (min-width: 968px) {
   .project-page-btn {
     left: 48%;
@@ -744,9 +760,15 @@ h6 {
   .contact-section {
     &__content {
       justify-content: center;
-      p {
-        padding-left: 3rem;
+      h3{
+        font-size: rem(160);
         width: 50%;
+      }
+      p {
+        width: 50%;
+      }
+      &__mail{
+        align-items: flex-start;
       }
     }
   }

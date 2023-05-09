@@ -89,10 +89,11 @@ export default function Home() {
               />
             </ParallaxLayer>
 
+            <ParallaxLayer offset={3} speed={0.5} style={{background: "hsl(34deg, 100%, 75%)"}}></ParallaxLayer>
             <ParallaxLayer
               offset={3}
               speed={1.5}
-              factor={0.5}
+              factor={1.5}
             >
               <Contact
                button={
