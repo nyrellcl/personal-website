@@ -133,10 +133,8 @@ h6 {
 }
 
 .container {
-  position: absolute;
   left: 0;
   right: 0;
-  top: -20rem;
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
@@ -483,21 +481,26 @@ h6 {
   .intro-section__content .nav-social__list {
     gap: 2rem;
   }
-  .about-section__card {
-    gap: 2rem;
-    justify-content: flex-start;
+  .about-section__card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
-  .about-section__card h2 {
+  .about-section__card__content h2 {
     font-size: 3rem;
   }
-  .about-section__card h3 {
-    font-size: 2.375rem;
-    text-align: center;
+  .about-section__card__content__skills {
+    padding: 2rem 0;
   }
-  .about-section__card .projects-blurb {
-    width: 100%;
-    font-size: 1.5rem;
-    font-weight: 700;
+  .about-section__card__content__skills .skill-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .about-section__card__content__skills .skill-card h3 {
+    font-size: 2.375rem;
     text-align: center;
   }
   .skill-section {
@@ -608,11 +611,12 @@ h6 {
   .intro-section__content p {
     font-size: 1.5rem;
   }
+  .about-section__card__content__skills .skill-card h3 {
+    text-align: center;
+    font-size: 4rem;
+  }
   .about-section__card h2 {
     font-size: 4.625rem;
-  }
-  .about-section__card h3 {
-    text-align: center;
   }
   .about-section__card p {
     font-size: 1.5rem;
@@ -649,16 +653,6 @@ h6 {
   .projects-section__images {
     width: 100%;
   }
-  .skill-btn {
-    position: absolute;
-    top: -15rem;
-  }
-  .container {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -18rem;
-  }
   .footer-section__nav {
     justify-content: space-between;
   }
@@ -694,10 +688,6 @@ h6 {
   }
   .about-section__card h3 {
     font-size: 4.625rem;
-    width: 50%;
-    position: absolute;
-    top: 16%;
-    left: 55%;
   }
   .about-section__card h3,
 .about-section__card .projects-blurb {
@@ -705,9 +695,18 @@ h6 {
   }
   .about-section__card p {
     width: 50%;
+    font-size: 1.25rem;
+  }
+  .about-section__card__content {
+    position: relative;
+  }
+  .about-section__card__content__skills {
+    position: absolute;
+    top: 7em;
+    left: 35em;
   }
   .about-section__card .page-btn {
-    margin: 0;
+    margin: 2rem 0;
   }
   .about-section__card .skill-section__card {
     top: 30%;
@@ -750,6 +749,10 @@ h6 {
   }
   .intro-section__content .trail-text-container .trail-text:nth-child(3) {
     padding-left: 20rem;
+  }
+  .about-section__card__content__skills {
+    top: 2em;
+    left: 55em;
   }
   .contact-section__content {
     justify-content: center;

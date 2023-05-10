@@ -123,10 +123,9 @@ h6 {
 }
 
 .container {
-  position: absolute;
+  //position: absolute;
   left: 0;
   right: 0;
-  top: -20rem;
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
@@ -272,7 +271,6 @@ h6 {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-
   }
 }
 
@@ -494,20 +492,27 @@ h6 {
 
   .about-section {
     &__card {
-      gap: 2rem;
-      justify-content: flex-start;
-      h2 {
-        font-size: rem(48);
-      }
-      h3 {
-        font-size: rem(38);
-        text-align: center;
-      }
-      .projects-blurb {
-        width: 100%;
-        font-size: rem(24);
-        font-weight: 700;
-        text-align: center;
+      &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        h2 {
+          font-size: rem(48);
+        }
+        &__skills {
+          padding: 2rem 0;
+          .skill-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            h3 {
+              font-size: rem(38);
+              text-align: center;
+            }
+          }
+        }
       }
     }
   }
@@ -548,17 +553,17 @@ h6 {
     &__content {
       width: 90%;
       margin: 0 auto;
-      &__btn{
+      &__btn {
         position: absolute;
-  right: 1%;
-  top: 112%;
+        right: 1%;
+        top: 112%;
       }
       h3 {
         font-size: rem(85);
         text-transform: uppercase;
         letter-spacing: rem(2);
       }
-      &__mail{
+      &__mail {
         position: relative;
       }
     }
@@ -645,11 +650,18 @@ h6 {
 
   .about-section {
     &__card {
+      &__content {
+        &__skills {
+          .skill-card {
+            h3 {
+              text-align: center;
+              font-size: 4rem;
+            }
+          }
+        }
+      }
       h2 {
         font-size: rem(74);
-      }
-      h3 {
-        text-align: center;
       }
       p {
         font-size: rem(24);
@@ -696,18 +708,6 @@ h6 {
     }
   }
 
-  .skill-btn {
-    position: absolute;
-    top: -15rem;
-  }
-
-  .container {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -18rem;
-  }
-
   .footer-section {
     &__nav {
       justify-content: space-between;
@@ -749,10 +749,6 @@ h6 {
     &__card {
       h3 {
         font-size: rem(74);
-        width: 50%;
-        position: absolute;
-        top: 16%;
-        left: 55%;
       }
       h3,
       .projects-blurb {
@@ -760,9 +756,19 @@ h6 {
       }
       p {
         width: 50%;
+        font-size: 1.25rem;
+      }
+      &__content {
+        position: relative;
+        &__skills {
+          position: absolute;
+          top: 7em;
+          left: 35em;
+        }
       }
       .page-btn {
-        margin: 0;
+        margin: 2rem 0;
+      
       }
       position: relative;
       justify-content: center;
@@ -800,7 +806,7 @@ h6 {
 
   .contact-section {
     &__content {
-      &__btn{
+      &__btn {
         position: static;
         margin-right: auto;
       }
@@ -829,6 +835,17 @@ h6 {
       }
     }
   }
+
+  .about-section {
+    &__card {
+      &__content {
+        &__skills {
+          top: 2em;
+          left: 55em;
+        }
+      }
+    }
+  }
   .contact-section {
     &__content {
       justify-content: center;
@@ -842,7 +859,7 @@ h6 {
         margin-left: auto;
         font-size: 1.15rem;
       }
-      &__btn{
+      &__btn {
         margin-left: auto;
         margin-right: 0;
         margin-top: 1rem;

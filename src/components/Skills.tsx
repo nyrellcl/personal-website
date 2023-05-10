@@ -40,8 +40,9 @@ function Skills() {
   ]);
 
   return (
-    <section className="skill-section">
-      <article className="skill-section__card">
+    <>
+      <article className="skill-card">
+      <h3>Working with...</h3>
         <animated.button
         className={open ? "" : "skill-btn"}
           type="button"
@@ -61,7 +62,7 @@ function Skills() {
           </animated.div>
         </animated.button>
       </article>
-    </section>
+    </>
   );
 }
 
