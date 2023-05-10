@@ -553,6 +553,14 @@ h6 {
         text-transform: uppercase;
         letter-spacing: rem(2);
       }
+      &__mail{
+        position: relative;
+        &__btn{
+          position: absolute;
+    right: -2%;
+    top: 170%;
+        }
+      }
     }
   }
 
@@ -793,8 +801,12 @@ h6 {
   .contact-section {
     &__content {
       &__mail {
+        align-items: flex-start;
         h4 {
           font-size: rem(30);
+        }
+        &__btn{
+          position: static;
         }
       }
     }

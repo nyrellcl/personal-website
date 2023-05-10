@@ -32,7 +32,7 @@ function Contact({ button }: ButtonProps) {
             </Link>
 
             </article>
-            <div className="contaxt-section__content__mail__btn">
+            <div className="contact-section__content__mail__btn">
           {button}
 
             </div>
