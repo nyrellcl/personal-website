@@ -430,9 +430,9 @@ h6 {
   &__nav {
     display: flex;
     padding-top: 1rem;
-    .attribution{
-      h5{
-        font-family: 'Montserrat', sans-serif;
+    .attribution {
+      h5 {
+        font-family: "Montserrat", sans-serif;
       }
     }
     &__list {
@@ -478,10 +478,22 @@ h6 {
       text-align: center;
 
       h1 {
-        font-size: rem(84);
+        font-size: rem(75);
+        text-transform: uppercase;
       }
       p {
-        font-size: rem(22);
+        font-size: rem(14);
+        text-align: left;
+        text-transform: uppercase;
+      }
+      &__intro {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      .trail-text-container {
+        display: flex;
+        flex-wrap: wrap;
       }
       .nav-social {
         width: 100%;
@@ -560,7 +572,7 @@ h6 {
     &__nav {
       flex-wrap: wrap;
       gap: 2rem;
-    justify-content: center;
+      justify-content: center;
       &__list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -571,6 +583,20 @@ h6 {
 }
 
 @media only screen and (min-width: 540px) {
+  .intro-section {
+    &__content {
+      .trail-text-container {
+        .trail-text {
+          &:nth-child(2) {
+            padding-left: 5rem;
+          }
+          &:nth-child(3) {
+            padding-left: 10rem;
+          }
+        }
+      }
+    }
+  }
   .project-page-btn {
     left: 45%;
   }
@@ -612,11 +638,12 @@ h6 {
   .intro-section {
     &__content {
       h1 {
-        font-size: rem(84);
+        font-size: 6rem;
       }
       p {
-        font-size: rem(38);
+        font-size: rem(24);
       }
+
       .profession-container {
         justify-content: center;
       }
@@ -709,10 +736,18 @@ h6 {
   .intro-section {
     &__content {
       h1 {
-        font-size: rem(100);
+        font-size: 9.5rem;
       }
       p {
-        font-size: rem(48);
+        text-align: right;
+        width: 80%;
+      }
+      &__intro {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        margin-left: auto;
       }
     }
   }
@@ -782,6 +817,23 @@ h6 {
 }
 
 @media only screen and (min-width: 1300px) {
+  .intro-section {
+    &__content {
+      .trail-text-container {
+        .trail-text {
+          &:nth-child(2) {
+            padding-left: 10rem;
+          }
+          &:nth-child(3) {
+            padding-left: 20rem;
+          }
+        }
+      }
+      &__intro {
+        width: 50%;
+      }
+    }
+  }
   .contact-section {
     &__content {
       justify-content: center;
