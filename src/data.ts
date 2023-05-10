@@ -44,7 +44,7 @@ export default [
       height: 200,
     },
     {
-      name: 'NPM',
+      name: 'Node',
       description: "The world's largest software registry. It is a command line tool that installs, updates, or uninstalls Node.js packages for an application.",
       bgColor: 'linear-gradient(135deg, hsl(330, 60%, 70%) 0%, hsl(330, 60%, 80%))',
       height: 400,
