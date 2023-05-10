@@ -49,6 +49,7 @@ function Hero({ button }: ButtonProps): JSX.Element {
             I am a developer actively building efficient and intuitive front end
             applications.
           <br/>
+          <br/>
             I strive to become a better developer than I was yesterday through
             constant learning.{" "}
           </p>
