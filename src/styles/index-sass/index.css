@@ -444,7 +444,7 @@ h6 {
 @media only screen and (min-width: 375px) {
   .project-page-btn {
     left: 43%;
-    top: 92%;
+    top: 85%;
   }
   .container {
     position: static;
@@ -515,8 +515,9 @@ h6 {
   .projects-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    gap: 1rem;
   }
   .projects-section h2 {
     font-size: 3rem;
@@ -525,7 +526,7 @@ h6 {
     display: flex;
     flex-direction: column;
     height: 100%;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
     padding-bottom: 3rem;
   }
