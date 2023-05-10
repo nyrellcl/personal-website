@@ -67,6 +67,7 @@ export default function Home() {
               }}
               offset={1}
               speed={1.5}
+              factor={factorSize}
             >
               <About
                 button={
