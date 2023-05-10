@@ -36,7 +36,6 @@ export default function Home() {
           content="I am a Frontend Developer with expertise in creating beautiful and functional websites and digital products. Contact me to learn more!"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="main">
         <section className="intro-section">
