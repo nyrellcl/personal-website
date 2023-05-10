@@ -50,8 +50,8 @@ export default [
       height: 400,
     },
     {
-      name: 'Tailwind',
-      description: 'An open source CSS framework.',
+      name: 'Rest API',
+      description: 'An application programming interface, that conforms to the design principles of the representational state transfer architectural style.',
       bgColor: "linear-gradient(135deg, hsl(197, 70%, 70%)0%, hsl(197, 70%, 80%))",
       height: 200,
     },
