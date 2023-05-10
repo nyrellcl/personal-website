@@ -15,13 +15,10 @@ function About({ button }: ButtonProps) {
           <p>
             With a passion for dynamic animations and intuitive navigation, I am
             committed to enhancing user experience through continuous learning
-            and building.
-          </p>
-          <p>
-            I specialize in crafting visually appealing and engaging user
-            interfaces. Advocate of writing clean, efficient, and maintainable
+            and building. Advocate of writing clean, efficient, and maintainable
             code that brings designs to life.
           </p>
+         
           <p>
             I strive to continuously refine my skills to create things that
             serve a purpose and help solve problems. With experience in customer
