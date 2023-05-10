@@ -556,7 +556,7 @@ h6 {
       &__btn {
         position: absolute;
         right: 1%;
-        top: 112%;
+        top: 125%;
       }
       h3 {
         font-size: rem(85);
@@ -575,9 +575,7 @@ h6 {
       gap: 2rem;
       justify-content: center;
       &__list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
+        flex-direction: column;
       }
     }
   }
@@ -711,9 +709,11 @@ h6 {
   .footer-section {
     &__nav {
       justify-content: space-between;
+      gap: 2rem;
       &__list {
         display: flex;
         justify-content: flex-start;
+        flex-direction: row;
         flex: 0 0 50%;
       }
     }

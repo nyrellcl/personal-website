@@ -541,7 +541,7 @@ h6 {
   .contact-section__content__btn {
     position: absolute;
     right: 1%;
-    top: 112%;
+    top: 125%;
   }
   .contact-section__content h3 {
     font-size: 5.3125rem;
@@ -557,9 +557,7 @@ h6 {
     justify-content: center;
   }
   .footer-section__nav__list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    flex-direction: column;
   }
 }
 @media only screen and (min-width: 540px) {
@@ -655,10 +653,12 @@ h6 {
   }
   .footer-section__nav {
     justify-content: space-between;
+    gap: 2rem;
   }
   .footer-section__nav__list {
     display: flex;
     justify-content: flex-start;
+    flex-direction: row;
     flex: 0 0 50%;
   }
 }

@@ -46,12 +46,12 @@ function Hero({ button }: ButtonProps): JSX.Element {
         </article>
         <article className="intro-section__content__intro">
           <p>
-            I am a developer actively building efficient and intuitive front end
+            I am a developer actively building <span style={{color: "hsl(155, 38%, 48%)"}}>efficient</span> and <span style={{color: "hsl(155, 38%, 48%)"}}>intuitive</span> front end
             applications.
           <br/>
           <br/>
             I strive to become a better developer than I was yesterday through
-            constant learning.{" "}
+            constant <span style={{color: "hsl(155, 38%, 48%)"}}>learning.</span>{" "}
           </p>
         {button}
         </article>
