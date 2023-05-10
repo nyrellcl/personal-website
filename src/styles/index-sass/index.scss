@@ -268,7 +268,7 @@ h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 2rem;
   }
 }
@@ -315,7 +315,7 @@ h6 {
   height: 100%;
   h2 {
     @extend %width-margin;
-    padding: 2rem 0;
+    padding: 1rem 0;
     color: $secondary-2;
   }
   .project-page-btn {
@@ -461,7 +461,7 @@ h6 {
     &__content {
       height: 100%;
       text-align: center;
-
+      justify-content: center;
       h1 {
         font-size: rem(75);
         text-transform: uppercase;
@@ -538,8 +538,7 @@ h6 {
       flex-direction: column;
       height: 100%;
       justify-content: center;
-      gap: 3rem;
-      margin-top: 2rem;
+      gap: 1rem;
       padding-bottom: 3rem;
     }
     &__card {
