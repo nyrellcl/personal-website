@@ -15,16 +15,14 @@ function About({ button }: ButtonProps) {
           <p>
             With a passion for dynamic animations and intuitive navigation, I am
             committed to enhancing user experience through continuous learning
-            and building. Advocate of writing clean, efficient, and maintainable
-            code that brings designs to life.
+            and building.
           </p>
-         
           <p>
-            I strive to continuously refine my skills to create things that
+            I strive to create things that
             serve a purpose and help solve problems. With experience in customer
             relations, putting the users first allows me to identify the right
             problems to solve, deliver the solution efficiently, and
-            continuously improve the solution over time.
+            continuously improve on the solution.
           </p>
         </article>
         <article className="about-section__card__content__skills">
