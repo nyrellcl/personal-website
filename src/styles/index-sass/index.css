@@ -553,7 +553,7 @@ h6 {
   }
   .footer-section__nav {
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 3.5rem;
     justify-content: center;
   }
   .footer-section__nav__list {
