@@ -55,35 +55,6 @@ export default [
       bgColor: "linear-gradient(135deg, hsl(197, 70%, 70%)0%, hsl(197, 70%, 80%))",
       height: 200,
     },
-    /*{
-      name: 'Lemon Gate',
-      description: '#96fbc4 → #f9f586',
-      svg: 'linear-gradient(135deg, #96fbc4 0%, #f9f586 100%)',
-      height: 400,
-    },
-    {
-      name: 'Salt Mountain',
-      description: ' #FFFEFF → #D7FFFE',
-      svg: 'linear-gradient(135deg, #FFFEFF 0%, #D7FFFE 100%)',
-      height: 200,
-    },
-    {
-      name: 'New York',
-      description: ' #fff1eb → #ace0f9',
-      svg: 'linear-gradient(135deg, #fff1eb 0%, #ace0f9 100%)',
-      height: 400,
-    },
-    {
-      name: 'Soft Grass',
-      description: ' #c1dfc4 → #deecdd',
-      svg: 'linear-gradient(135deg, #c1dfc4 0%, #deecdd 100%)',
-      height: 400,
-    },
-    {
-      name: 'Japan Blush',
-      description: ' #ddd6f3 → #faaca8',
-      svg: 'linear-gradient(135deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%)',
-      height: 200,
-    },*/
+
   ]
   

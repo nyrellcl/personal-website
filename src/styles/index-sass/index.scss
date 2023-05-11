@@ -146,6 +146,9 @@ h6 {
   width: rem(125);
   height: rem(125);
   border-radius: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   &::before {
     content: "Click me!";
     position: absolute;
@@ -767,7 +770,6 @@ h6 {
       }
       .page-btn {
         margin: 2rem 0;
-      
       }
       position: relative;
       justify-content: center;

@@ -46,7 +46,7 @@ function Skills() {
         <animated.button
         className={open ? "" : "skill-btn"}
           type="button"
-          style={{ ...rest, width: size, height: size,  border: "none" }}
+          style={{ ...rest, width: size, height: "size",  border: "none" }}
           onClick={() => setOpen(!open)}
         >
           {" "}

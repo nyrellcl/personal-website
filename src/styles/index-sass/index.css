@@ -157,6 +157,9 @@ h6 {
   width: 7.8125rem;
   height: 7.8125rem;
   border-radius: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 .skill-btn::before {
   content: "Click me!";
