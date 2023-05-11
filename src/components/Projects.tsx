@@ -80,25 +80,27 @@ const ProjectPage = ({
 
 const projects1 = [
   {
-    name: "Financial Resource Website",
-    description: "React | NextJS | TypeScript | SASS | Git",
-    image: budgetWeb,
-    link: "https://react-challenge-budget-app-plj8.vercel.app/",
-  },
-  {
     name: "Github User Search",
     description: "React | TypeScript  | SASS | Github API",
     image: githubSearch,
     link: "https://nyrellcl.github.io/github-search/",
   },
-];
-
-const projects2 = [
   {
     name: "To-do Application",
     description: "React | JavaScript | SASS ",
     image: toDo,
     link: "https://nyrellcl.github.io/todo-app/",
+  },
+];
+
+
+
+const projects2 = [
+  {
+    name: "Coffeeroasters Website",
+  description: "React | React Router | JavaScript | SASS",
+  image: coffee,
+  link: "https://nyrellcl.github.io/coffee-roasters-react/",
   },
   {
     name: "My Team Website",
@@ -116,10 +118,10 @@ const projects3 = [
     link: "https://nyrellcl.github.io/typing-game/",
   },
   {
-    name: "Coffeeroasters Website",
-    description: "React | React Router | JavaScript | SASS",
-    image: coffee,
-    link: "https://nyrellcl.github.io/coffee-roasters-react/",
+    name: "Financial Resource Website",
+    description: "React | NextJS | TypeScript | SASS | Git",
+    image: budgetWeb,
+    link: "https://react-challenge-budget-app-plj8.vercel.app/",
   },
 ];
 const projects4 = [
