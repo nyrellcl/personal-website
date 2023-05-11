@@ -161,6 +161,13 @@ h6 {
   align-items: flex-start;
   justify-content: center;
 }
+.skill-btn:hover, .skill-btn:focus {
+  transform: scale(1.1);
+  font-size: 1.2rem;
+}
+.skill-btn:active {
+  transform: translateY(10px);
+}
 .skill-btn::before {
   content: "Click me!";
   position: absolute;

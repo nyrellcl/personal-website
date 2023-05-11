@@ -149,6 +149,13 @@ h6 {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  &:hover, &:focus{
+   transform: scale(1.1);
+   font-size: 1.2rem;
+  }
+  &:active{
+    transform: translateY(10px);
+  }
   &::before {
     content: "Click me!";
     position: absolute;
