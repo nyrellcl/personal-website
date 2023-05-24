@@ -15,13 +15,19 @@ function Contact({ button }: ButtonProps) {
           {/* eslint-disable-next-line react/no-unescaped-entities */}
           <h3>Let's connect</h3>
           <p>
-            My goal is to work alongside <span style={{color: "hsl(155, 38%, 48%);"}}>talented</span> people and contribute to
-            products that <span style={{color: "hsl(155, 38%, 48%)"}}>enhances</span> the lives of users.
+            My goal is to work alongside{" "}
+            <span style={{ color: "hsl(0, 5%, 12%);" }}>talented</span> people
+            and contribute to products that{" "}
+            <span style={{ color: "hsl(0, 5%, 12%)" }}>enhances</span> the lives
+            of users.
           </p>
           <br />
           <p>
-            I am always looking to <span style={{color: "hsl(155, 38%, 48%)"}}>learn </span> more and am open to taking on
-            challenging roles that <span style={{color: "hsl(155, 38%, 48%)"}}>strengthens</span> my skills as a developer.
+            I am always looking to{" "}
+            <span style={{ color: "hsl(0, 5%, 12%)" }}>learn </span> more and am
+            open to taking on challenging roles that{" "}
+            <span style={{ color: "hsl(0, 5%, 12%)" }}>strengthens</span> my
+            skills as a developer.
           </p>
           <div className="contact-section__content__btn">{button}</div>
           <article className="contact-section__content__mail">
