@@ -16,7 +16,7 @@ function Contact({ button }: ButtonProps) {
           <h3>Let's connect</h3>
           <p>
             My goal is to work alongside{" "}
-            <span style={{ color: "hsl(0, 5%, 12%);" }}>talented</span> people
+            <span style={{ color: "hsl(0, 5%, 12%)" }}>talented</span> people
             and contribute to products that{" "}
             <span style={{ color: "hsl(0, 5%, 12%)" }}>enhances</span> the lives
             of users.
