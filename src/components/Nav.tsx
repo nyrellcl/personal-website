@@ -12,7 +12,7 @@ function Nav() {
     <header>
       <nav className="nav-social">
         <div className="logo">
-          <Link href="/">
+          <Link href="/" aria-label="logo">
             <Image src={logo} alt="" />
           </Link>
         </div>
@@ -28,21 +28,29 @@ function Nav() {
             !isClicked ? "nav-social__list" : "nav-social__list active"
           }
         >
-          <Link
-            href="https://www.linkedin.com/in/nyrell-leonor-39180a1a4/"
-            target="_blank"
-          >
-            <li>Linkedin</li>
-          </Link>
-          <Link href="/Nyrell-Leonor-Resume-CV.pdf" download>
-            <li>Resume</li>
-          </Link>
-          <Link href="https://github.com/nyrellcl" target="_blank">
-            <li>Github</li>
-          </Link>
-          <Link href="mailto:nyrell.leonor2000@gmail.com">
-            <li>E-mail</li>
-          </Link>
+          <li>
+            <Link
+              href="https://www.linkedin.com/in/nyrell-leonor-39180a1a4/"
+              target="_blank"
+            >
+              LinkedIn
+            </Link>
+          </li>
+          <li>
+            <Link href="/Nyrell-Leonor-Resume-CV.pdf" download>
+              Resume
+            </Link>
+          </li>
+
+          <li>
+            <Link href="https://github.com/nyrellcl" target="_blank">
+              Github
+            </Link>
+          </li>
+
+          <li>
+            <Link href="mailto:nyrell.leonor2000@gmail.com">E-mail</Link>
+          </li>
         </ul>
       </nav>
     </header>

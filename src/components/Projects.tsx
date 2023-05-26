@@ -5,12 +5,12 @@ import { CgArrowLongRightC } from "react-icons/cg";
 import Link from "next/link";
 import coffee from "../assets/coffee.png";
 import myTeam from "../assets/myteam.png";
-import dictionaryApp from "../assets/dictionary-app.png"
+import dictionaryApp from "../assets/dictionary-app.png";
 import typingGame from "../assets/typing-game.png";
 import githubSearch from "../assets/github-search.png";
 import toDo from "../assets/todo.png";
-import loop from "../assets/loop-studios.png"
-import advice from "../assets/advice.png"
+import loop from "../assets/loop-studios.png";
+import advice from "../assets/advice.png";
 
 interface ButtonProps {
   button: React.ReactNode;
@@ -54,18 +54,24 @@ const ProjectPage = ({
     <ParallaxLayer offset={offset} speed={0.5}>
       <section className="projects-section">
         <h2>My Work</h2>
-        <button type="button" className="project-btn" onClick={onPageClick}>
+        <button
+          type="button"
+          aria-label="navigate-projects-button"
+          className="project-btn"
+          onClick={onPageClick}
+        >
           <CgArrowLongRightC />
         </button>
         <article className="projects-section__container">
           {projects.map((project) => (
             <article key={project.name} className="projects-section__card">
               <Link href={project.link} target="_blank">
-              <Image
-                src={project.image}
-                alt={project.name}
-                className="projects-section__images"
-              /></Link>
+                <Image
+                  src={project.image}
+                  alt={project.name}
+                  className="projects-section__images"
+                />
+              </Link>
               <Link href={project.link} target="_blank">
                 <h3>{project.name}</h3>
               </Link>
@@ -89,19 +95,16 @@ const projects1 = [
     name: "Dictionary Application",
     description: "React | TypeScript | API | Vite",
     image: dictionaryApp,
-    link: "https://dictionary-app-by46.vercel.app/"
-  }
-  
+    link: "https://dictionary-app-by46.vercel.app/",
+  },
 ];
-
-
 
 const projects2 = [
   {
     name: "Coffeeroasters Website",
-  description: "React | React Router | JavaScript | SCSS",
-  image: coffee,
-  link: "https://nyrellcl.github.io/coffee-roasters-react/",
+    description: "React | React Router | JavaScript | SCSS",
+    image: coffee,
+    link: "https://nyrellcl.github.io/coffee-roasters-react/",
   },
   {
     name: "My Team Website",
@@ -130,14 +133,14 @@ const projects4 = [
     name: "Loopstudios Website",
     description: "HTML | SCSS | JavaScript",
     image: loop,
-    link:"https://stalwart-puffpuff-88d009.netlify.app"
+    link: "https://stalwart-puffpuff-88d009.netlify.app",
   },
-{
-  name: "Advice Generator Applicaton",
-  description: "HTML | SCSS | JavaScript | API",
-  image: advice,
-  link: "https://nyrellcl.github.io/advice-generator/"
-}
+  {
+    name: "Advice Generator Applicaton",
+    description: "HTML | SCSS | JavaScript | API",
+    image: advice,
+    link: "https://nyrellcl.github.io/advice-generator/",
+  },
 ];
 
 function Projects({ button }: ButtonProps) {
@@ -176,7 +179,6 @@ function Projects({ button }: ButtonProps) {
           projects={projects4}
           gradient="pink"
         />
-        
       </Parallax>
     </>
   );

@@ -46,6 +46,7 @@ export default function Home() {
                   <button
                     type="button"
                     className="page-btn"
+                    aria-label="navigate-pages-button"
                     onClick={() => parallaxRef.current?.scrollTo(1)}
                   >
                     <CgArrowLongDownC />
@@ -74,6 +75,7 @@ export default function Home() {
                   <button
                     type="button"
                     className="page-btn"
+                    aria-label="navigate-pages-button"
                     onClick={() => parallaxRef.current?.scrollTo(2)}
                   >
                     <CgArrowLongDownC />
@@ -87,6 +89,7 @@ export default function Home() {
                   <button
                     type="button"
                     className="project-page-btn"
+                    aria-label="navigate-pages-button"
                     onClick={() => parallaxRef.current?.scrollTo(3)}
                   >
                     <CgArrowLongDownC />
@@ -106,6 +109,7 @@ export default function Home() {
                   <button
                     type="button"
                     className="page-btn"
+                    aria-label="navigate-pages-button"
                     onClick={() => parallaxRef.current?.scrollTo(0)}
                   >
                     <CgArrowLongUpC />
