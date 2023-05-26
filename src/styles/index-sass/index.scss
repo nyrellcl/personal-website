@@ -379,6 +379,7 @@ h6 {
     flex-direction: column;
     p {
       color: $neutral-3;
+      padding: 1rem 0;
     }
     &__mail {
       display: flex;
@@ -570,7 +571,7 @@ h6 {
       &__btn {
         position: absolute;
         right: 1%;
-        top: 125%;
+        top: 120%;
       }
       h3 {
         font-size: rem(85);
