@@ -5,7 +5,7 @@ import { CgArrowLongRightC } from "react-icons/cg";
 import Link from "next/link";
 import coffee from "../assets/coffee.png";
 import myTeam from "../assets/myteam.png";
-import budgetWeb from "../assets/react-challenge.png";
+import dictionaryApp from "../assets/dictionary-app.png"
 import typingGame from "../assets/typing-game.png";
 import githubSearch from "../assets/github-search.png";
 import toDo from "../assets/todo.png";
@@ -86,11 +86,12 @@ const projects1 = [
     link: "https://nyrellcl.github.io/github-search/",
   },
   {
-    name: "To-do Application",
-    description: "React | JavaScript | SASS ",
-    image: toDo,
-    link: "https://nyrellcl.github.io/todo-app/",
-  },
+    name: "Dictionary Application",
+    description: "React | TypeScript | API | Vite",
+    image: dictionaryApp,
+    link: "https://dictionary-app-by46.vercel.app/"
+  }
+  
 ];
 
 
@@ -98,13 +99,13 @@ const projects1 = [
 const projects2 = [
   {
     name: "Coffeeroasters Website",
-  description: "React | React Router | JavaScript | SASS",
+  description: "React | React Router | JavaScript | SCSS",
   image: coffee,
   link: "https://nyrellcl.github.io/coffee-roasters-react/",
   },
   {
     name: "My Team Website",
-    description: "HTML | SASS | JavaScript",
+    description: "HTML | SCSS | JavaScript",
     image: myTeam,
     link: "https://keen-lily-45c773.netlify.app/",
   },
@@ -113,21 +114,21 @@ const projects2 = [
 const projects3 = [
   {
     name: "Typing Game Application",
-    description: "React | JavaScript | SASS",
+    description: "React | JavaScript | SCSS",
     image: typingGame,
     link: "https://nyrellcl.github.io/typing-game/",
   },
   {
-    name: "Financial Resource Website",
-    description: "React | NextJS | TypeScript | SASS | Git",
-    image: budgetWeb,
-    link: "https://react-challenge-budget-app-plj8.vercel.app/",
+    name: "To-do Application",
+    description: "React | JavaScript | SCSS ",
+    image: toDo,
+    link: "https://nyrellcl.github.io/todo-app/",
   },
 ];
 const projects4 = [
   {
     name: "Loopstudios Website",
-    description: "HTML | SASS | JavaScript",
+    description: "HTML | SCSS | JavaScript",
     image: loop,
     link:"https://stalwart-puffpuff-88d009.netlify.app"
   },

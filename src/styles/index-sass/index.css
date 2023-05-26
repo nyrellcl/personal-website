@@ -749,6 +749,7 @@ h6 {
   .contact-section__content p {
     width: 50%;
     text-align: right;
+    font-size: 1.25rem;
     margin-left: auto;
   }
   .contact-section__content__btn {
