@@ -558,6 +558,7 @@ h6 {
     font-size: 5.3125rem;
     text-transform: uppercase;
     letter-spacing: 0.125rem;
+    color: hsl(0deg, 0%, 20%);
   }
   .contact-section__content__mail {
     position: relative;
