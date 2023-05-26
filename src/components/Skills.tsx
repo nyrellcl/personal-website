@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import {
   useTransition,
   useSpring,
@@ -12,6 +12,7 @@ import data from "@/data";
 
 function Skills() {
   const [open, setOpen] = useState<boolean>(false);
+  const skillCardRef = useRef<any>(null);
 
   const springApi = useSpringRef();
   const { size, ...rest } = useSpring({
@@ -39,14 +40,39 @@ function Skills() {
     open ? 0.1 : 0.6,
   ]);
 
+  useEffect(() => {
+    const skillAnimateOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5, // when element is >50% visible in the viewport
+    };
+
+    //intersection observer used when a target element in this case the article skill card, 
+    //intersects the document's viewport
+    const callback: IntersectionObserverCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setOpen(true);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(callback, skillAnimateOptions);
+    observer.observe(skillCardRef.current);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <>
-      <article className="skill-card">
-      <h3>Working with...</h3>
+      <article className="skill-card" ref={skillCardRef}>
+        <h3>Working with...</h3>
         <animated.button
-        className={open ? "" : "skill-btn"}
+          className={open ? "" : "skill-btn"}
           type="button"
-          style={{ ...rest, width: size, height: "size",  border: "none" }}
+          style={{ ...rest, width: size, height: "size", border: "none" }}
           onClick={() => setOpen(!open)}
         >
           {" "}

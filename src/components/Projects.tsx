@@ -134,7 +134,7 @@ const projects4 = [
   },
 {
   name: "Advice Generator Applicaton",
-  description: "HTML | SASS | JavaScript | API",
+  description: "HTML | SCSS | JavaScript | API",
   image: advice,
   link: "https://nyrellcl.github.io/advice-generator/"
 }
