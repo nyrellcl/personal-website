@@ -263,13 +263,13 @@ h6 {
 }
 .nav-social__list li {
   font-family: "Montserrat", sans-serif;
-  transition: all 250ms linear;
-}
-.nav-social__list li:hover, .nav-social__list li:focus {
-  color: hsl(155deg, 38%, 48%);
 }
 .nav-social__list li a {
+  transition: all 250ms linear;
   color: hsl(0deg, 0%, 20%);
+}
+.nav-social__list li a:hover, .nav-social__list li a:focus {
+  color: hsl(155deg, 38%, 48%);
 }
 .nav-social__list.active {
   opacity: 1;
@@ -448,12 +448,12 @@ h6 {
   color: hsl(0deg, 5%, 12%);
   transition: all 250ms linear;
 }
-.footer-section__nav__list li:hover, .footer-section__nav__list li:focus {
-  color: hsl(155deg, 38%, 48%);
-  cursor: pointer;
-}
 .footer-section__nav__list li a {
+  transition: all 250ms linear;
   color: hsl(0deg, 0%, 20%);
+}
+.footer-section__nav__list li a:hover, .footer-section__nav__list li a:focus {
+  color: hsl(155deg, 38%, 48%);
 }
 
 @media only screen and (min-width: 375px) {
