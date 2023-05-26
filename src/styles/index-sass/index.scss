@@ -252,11 +252,13 @@ h6 {
     justify-content: center;
     li {
       font-family: "Montserrat", sans-serif;
-      color: $neutral-2;
       transition: all 250ms linear;
       &:hover,
       &:focus {
         color: $accent-3;
+      }
+      a{
+        color: $neutral-2;
       }
     }
     &.active {
@@ -446,6 +448,9 @@ h6 {
         &:focus {
           color: $accent-3;
           cursor: pointer;
+        }
+        a{
+          color: $neutral-2;
         }
       }
     }
