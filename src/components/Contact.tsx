@@ -21,6 +21,7 @@ function Contact({ button }: ButtonProps) {
             <span style={{ color: "hsl(0, 5%, 12%)" }}>enhances</span> the lives
             of users.
           </p>
+          <br/>
           <p>
             I am always looking to{" "}
             <span style={{ color: "hsl(0, 5%, 12%)" }}>learn </span> more and am

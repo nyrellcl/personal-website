@@ -385,7 +385,6 @@ h6 {
 }
 .contact-section__content p {
   color: hsl(0deg, 0%, 50%);
-  padding: 1rem 0;
 }
 .contact-section__content__mail {
   display: flex;
@@ -558,7 +557,7 @@ h6 {
   .contact-section__content__btn {
     position: absolute;
     right: 1%;
-    top: 120%;
+    top: 125%;
   }
   .contact-section__content h3 {
     font-size: 5.3125rem;
