@@ -44,14 +44,15 @@ h6 {
 .logo {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
   width: 80%;
   z-index: 10;
 }
-.logo img {
-  width: 100%;
-  height: 100%;
+.logo span {
+  font-family: "Arapey";
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: hsl(0deg, 0%, 20%);
 }
 
 .project-btn {
@@ -238,7 +239,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 .nav-social__menu {
   z-index: 10;
@@ -612,7 +613,7 @@ h6 {
   }
   .logo {
     width: 30%;
-    margin-right: auto;
+    margin: 0 auto;
   }
   .project-btn {
     font-size: 6rem;
@@ -662,11 +663,17 @@ h6 {
 @media only screen and (min-width: 900px) {
   .nav-social__list {
     justify-content: space-between;
-    width: 30%;
+    width: 40%;
     margin-right: auto;
+  }
+  .about-section__card__content__skills {
+    padding: 0;
   }
   .projects-section__images {
     width: 100%;
+  }
+  .contact-section__content h3 {
+    font-size: 10rem;
   }
   .footer-section__nav {
     justify-content: space-between;
@@ -752,9 +759,6 @@ h6 {
   .projects-section__images {
     width: 80%;
   }
-  .contact-section__content h3 {
-    font-size: 8.5rem;
-  }
   .contact-section__content p {
     width: 50%;
     text-align: right;
@@ -780,14 +784,13 @@ h6 {
     padding-left: 20rem;
   }
   .about-section__card__content__skills {
-    top: 5.5em;
+    top: 8em;
     left: 55em;
   }
   .contact-section__content {
     justify-content: center;
   }
   .contact-section__content h3 {
-    font-size: 10rem;
     width: 50%;
   }
   .contact-section__content p {

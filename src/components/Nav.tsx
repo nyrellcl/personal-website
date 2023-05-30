@@ -12,9 +12,8 @@ function Nav() {
     <header>
       <nav className="nav-social">
         <div className="logo">
-          <Link href="/" aria-label="logo">
-            <Image src={logo} alt="" />
-          </Link>
+          <Link href="/"><span>Nyrell Leonor</span></Link>
+          
         </div>
 
         <div
