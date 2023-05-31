@@ -645,9 +645,6 @@ h6 {
     font-size: 4.625rem;
     padding: 2rem 0 0 2rem;
   }
-  .projects-section__images {
-    width: 50%;
-  }
   .projects-section__container {
     margin-top: 0;
     padding-bottom: 3rem;
@@ -742,6 +739,9 @@ h6 {
     right: 0;
     left: 50%;
   }
+  .projects-section {
+    gap: 0;
+  }
   .projects-section h2 {
     font-size: 4.625rem;
   }
@@ -777,11 +777,14 @@ h6 {
   }
 }
 @media only screen and (min-width: 1300px) {
+  .intro-section__content .trail-text-container .trail-text:first-child {
+    padding-left: 5rem;
+  }
   .intro-section__content .trail-text-container .trail-text:nth-child(2) {
-    padding-left: 10rem;
+    padding-left: 15rem;
   }
   .intro-section__content .trail-text-container .trail-text:nth-child(3) {
-    padding-left: 20rem;
+    padding-left: 25rem;
   }
   .about-section__card__content__skills {
     top: 8em;

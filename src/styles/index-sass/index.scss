@@ -691,9 +691,6 @@ h6 {
       font-size: rem(74);
       padding: 2rem 0 0 2rem;
     }
-    &__images {
-      width: 50%;
-    }
     &__container {
       margin-top: 0;
       padding-bottom: 3rem;
@@ -822,6 +819,7 @@ h6 {
     h2 {
       font-size: rem(74);
     }
+    gap: 0;
     &__container {
       display: flex;
       align-items: center;
@@ -865,11 +863,14 @@ h6 {
     &__content {
       .trail-text-container {
         .trail-text {
+          &:first-child{
+            padding-left: 5rem;
+          }
           &:nth-child(2) {
-            padding-left: 10rem;
+            padding-left: 15rem;
           }
           &:nth-child(3) {
-            padding-left: 20rem;
+            padding-left: 25rem;
           }
         }
       }
