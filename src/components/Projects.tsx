@@ -70,6 +70,7 @@ const ProjectPage = ({
                   src={project.image}
                   alt={project.name}
                   className="projects-section__images"
+                  loading="lazy"
                 />
               </Link>
               <Link href={project.link} target="_blank">
