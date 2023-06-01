@@ -309,6 +309,9 @@ h6 {
 .about-section__card h3 {
   color: hsl(0deg, 0%, 20%);
 }
+.about-section__card h2 {
+  text-transform: uppercase;
+}
 .about-section__card h3 {
   text-align: center;
   font-weight: 400;
@@ -336,6 +339,7 @@ h6 {
 .projects-section h2 {
   padding: 1rem 0;
   color: hsl(34deg, 100%, 75%);
+  text-transform: uppercase;
 }
 .projects-section .project-page-btn {
   width: 4rem;
@@ -460,7 +464,7 @@ h6 {
 @media only screen and (min-width: 375px) {
   .project-page-btn {
     left: 43%;
-    top: 92%;
+    top: 90%;
   }
   .container {
     position: static;
@@ -710,8 +714,11 @@ h6 {
     position: relative;
     justify-content: center;
   }
-  .about-section__card h3 {
+  .about-section__card h2 {
     font-size: 5.25rem;
+  }
+  .about-section__card h3 {
+    font-size: 4.625rem;
   }
   .about-section__card h3,
 .about-section__card .projects-blurb {
@@ -743,7 +750,7 @@ h6 {
     gap: 0;
   }
   .projects-section h2 {
-    font-size: 4.625rem;
+    font-size: 5.25rem;
   }
   .projects-section__container {
     display: flex;

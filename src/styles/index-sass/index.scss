@@ -294,6 +294,9 @@ h6 {
     h3 {
       color: $neutral-2;
     }
+    h2{
+      text-transform: uppercase;
+    }
     h3 {
       text-align: center;
       font-weight: 400;
@@ -330,6 +333,7 @@ h6 {
     @extend %width-margin;
     padding: 1rem 0;
     color: $secondary-2;
+    text-transform: uppercase;
   }
   .project-page-btn {
     width: 4rem;
@@ -461,7 +465,7 @@ h6 {
 @media only screen and (min-width: 375px) {
   .project-page-btn {
     left: 43%;
-    top: 92%;
+    top: 90%;
   }
 
   .container {
@@ -779,8 +783,11 @@ h6 {
 
   .about-section {
     &__card {
-      h3 {
+      h2{
         font-size: rem(84);
+      }
+      h3 {
+        font-size: rem(74);
       }
       h3,
       .projects-blurb {
@@ -817,7 +824,7 @@ h6 {
 
   .projects-section {
     h2 {
-      font-size: rem(74);
+      font-size: rem(84);
     }
     gap: 0;
     &__container {
