@@ -36,7 +36,7 @@ function Nav() {
             </Link>
           </li>
           <li>
-            <Link href="/Nyrell-Leonor-Resume-CV.pdf" download>
+            <Link href="/Resume-NyrellLeonor.pdf" download>
               Resume
             </Link>
           </li>
