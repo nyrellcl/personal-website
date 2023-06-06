@@ -733,7 +733,7 @@ h6 {
   }
   .about-section__card__content__skills {
     position: absolute;
-    top: 7em;
+    top: 5em;
     left: 35em;
   }
   .about-section__card .page-btn {
@@ -783,6 +783,18 @@ h6 {
     font-size: 1.875rem;
   }
 }
+@media only screen and (min-width: 1100px) {
+  .about-section__card__content__skills {
+    top: 6em;
+    left: 40em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .about-section__card__content__skills {
+    top: 8em;
+    left: 45em;
+  }
+}
 @media only screen and (min-width: 1300px) {
   .intro-section__content .trail-text-container .trail-text:first-child {
     padding-left: 5rem;
@@ -794,7 +806,6 @@ h6 {
     padding-left: 25rem;
   }
   .about-section__card__content__skills {
-    top: 8em;
     left: 55em;
   }
   .contact-section__content {

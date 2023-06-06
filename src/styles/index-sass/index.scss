@@ -38,8 +38,8 @@ h6 {
   align-items: center;
   width: 80%;
   z-index: 10;
-  span{
-    font-family: 'Arapey';
+  span {
+    font-family: "Arapey";
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 2px;
@@ -150,11 +150,12 @@ h6 {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  &:hover, &:focus{
-   transform: scale(1.1);
-   font-size: 1.2rem;
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    font-size: 1.2rem;
   }
-  &:active{
+  &:active {
     transform: translateY(10px);
   }
   &::before {
@@ -253,7 +254,7 @@ h6 {
     justify-content: center;
     li {
       font-family: "Montserrat", sans-serif;
-      a{
+      a {
         transition: all 250ms linear;
         color: $neutral-2;
         &:hover,
@@ -294,7 +295,7 @@ h6 {
     h3 {
       color: $neutral-2;
     }
-    h2{
+    h2 {
       text-transform: uppercase;
     }
     h3 {
@@ -449,7 +450,7 @@ h6 {
         font-family: "Montserrat", sans-serif;
         color: $neutral;
         transition: all 250ms linear;
-        a{
+        a {
           transition: all 250ms linear;
           color: $neutral-2;
           &:hover,
@@ -718,10 +719,10 @@ h6 {
     }
   }
 
-  .about-section{
-    &__card{
-      &__content{
-        &__skills{
+  .about-section {
+    &__card {
+      &__content {
+        &__skills {
           padding: 0;
         }
       }
@@ -733,9 +734,9 @@ h6 {
     }
   }
 
-  .contact-section{
-    &__content{
-      h3{
+  .contact-section {
+    &__content {
+      h3 {
         font-size: rem(160);
       }
     }
@@ -783,7 +784,7 @@ h6 {
 
   .about-section {
     &__card {
-      h2{
+      h2 {
         font-size: rem(84);
       }
       h3 {
@@ -801,7 +802,7 @@ h6 {
         position: relative;
         &__skills {
           position: absolute;
-          top: 7em;
+          top: 5em;
           left: 35em;
         }
       }
@@ -845,7 +846,7 @@ h6 {
 
   .contact-section {
     &__content {
-      p{
+      p {
         width: 50%;
         text-align: right;
         font-size: rem(20);
@@ -865,12 +866,38 @@ h6 {
   }
 }
 
+@media only screen and (min-width: 1100px) {
+  .about-section {
+    &__card {
+      &__content {
+        &__skills {
+          top: 6em;
+          left: 40em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  .about-section {
+    &__card {
+      &__content {
+        &__skills {
+          top: 8em;
+          left: 45em;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1300px) {
   .intro-section {
     &__content {
       .trail-text-container {
         .trail-text {
-          &:first-child{
+          &:first-child {
             padding-left: 5rem;
           }
           &:nth-child(2) {
@@ -888,7 +915,6 @@ h6 {
     &__card {
       &__content {
         &__skills {
-          top: 8em;
           left: 55em;
         }
       }
