@@ -1,5 +1,8 @@
+/* eslint-disable @next/next/no-script-component-in-head */
+/* eslint-disable @next/next/inline-script-id */
 /* eslint-disable @next/next/next-script-for-ga */
 import Head from "next/head";
+import Script from "next/script";
 import { useRef, useState, useEffect } from "react";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import Hero from "@/components/Hero";
@@ -31,11 +34,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <script
-          dangerouslySetInnerHTML=
-          {{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NTPPP99');`,
-          }}/>
+      <Script
+    dangerouslySetInnerHTML={{
+      __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NTPPP99');`,
+    }}
+  />
         <title>Nyrell Leonor - Front End Developer </title>
         <meta
           name="description"
